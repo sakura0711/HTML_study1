@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>實現超連接</title>
+</head>
+
+<body>
+    <h3>"&gt;" 要用 "& gt;" 取代 <br>
+        "&lt;" 要用 "& lt;" 取代</h3>
+
+    <div>
+        <p>
+        <h2>1. 外部連接></h2>
+        <h5>-----第一種 _self 直接取代當前網頁 (默認值，當沒有 target 屬性時)</h5>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=3s" target="_self">點我觀看更多</a>
+        <h5>-----第二種 _blank 開啟新分頁</h5>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=3s" target="_blank">點擊觀看嘿嘿嘿影片!!</a>
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <p>
+        <h2>2. 內部連接></h2>
+        <h5>-----直接呼叫網頁名稱即可</h5>
+        <a href="06_添加圖片.html">點擊我看圖片~</a>
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <p>
+        <h2>3. 空連接 #&gt;</h2>
+        <h5>-----沒有鏈接的網頁</h5>
+        <a href="#">我沒辦法通往神秘的世界@w@</a>
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <p>
+        <h2>4. 檔案下載鏈接&gt;</h2>
+        <h5>-----點擊可以下載檔案(.exe or .zip)</h5>
+        <a href="../datafile/background.7z">點我下載檔案</a>
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <p>
+        <h2>5. 網頁元素的連接&gt;</h2>
+        <h5>-----所有元素都可以擁有超連接!</h5>
+        <a href="https://tw.yahoo.com/" target="_blank">
+            <img src="https://s.yimg.com/cv/apiv2/twfrontpage/logo/Yahoo-TW-desktop-FP@2x.png" alt=""></a>
+        </p>
+    </div>
+
+    
+</body>
+
+</html>
