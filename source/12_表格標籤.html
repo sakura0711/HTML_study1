@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h3>表格標籤的應用</h3>
+    <h1>表格標籤的應用</h1>
     
     <div>
         <table>
@@ -35,6 +35,184 @@
             </tr>
         </table>
     </div>
+
+    <hr>
+    <h4>另外，如果要設置表頭單元格可以使用&lt;th&gt;標籤<br>
+        表頭標籤會居中顯示，並且加粗強調。
+    </h4>
+    <div>
+        <table>
+            <tr>
+                <th>姓　名</th>
+                <th>性　別</th>
+                <th>年　齡</th>
+            </tr>
+            <tr>
+                <td>王一博</td>
+                <td>男</td>
+                <td>25歲</td>
+            </tr>
+            <tr>
+                <td>蔡徐坤</td>
+                <td>男</td>
+                <td>24歲</td>
+            </tr>
+            <tr>
+                <td>金秀賢</td>
+                <td>男</td>
+                <td>34歲</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <h1>表格標籤的屬性</h1>
+
+    tip:通常屬性會寫在CSS文檔內部。
+    <!-- 表格的屬性須加在table裡面 -->
+
+    <h3>1. align，用於對齊頁面。</h3>
+    left 靠左 center 靠中 right 靠右 <br>
+
+    <div>
+        <table align="center">
+            <tr>
+                <th>姓　名</th>
+                <th>性　別</th>
+                <th>年　齡</th>
+            </tr>
+            <tr>
+                <td>王一博</td>
+                <td>男</td>
+                <td>25歲</td>
+            </tr>
+            <tr>
+                <td>蔡徐坤</td>
+                <td>男</td>
+                <td>24歲</td>
+            </tr>
+            <tr>
+                <td>金秀賢</td>
+                <td>男</td>
+                <td>34歲</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr><br>
+
+    <h3>2. border，用於設定邊框大小</h3>
+
+    <div>
+        <table border="5">
+            <tr>
+                <th>姓　名</th>
+                <th>性　別</th>
+                <th>年　齡</th>
+            </tr>
+            <tr>
+                <td>王一博</td>
+                <td>男</td>
+                <td>25歲</td>
+            </tr>
+            <tr>
+                <td>蔡徐坤</td>
+                <td>男</td>
+                <td>24歲</td>
+            </tr>
+            <tr>
+                <td>金秀賢</td>
+                <td>男</td>
+                <td>34歲</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr><br>
+
+    <h3>3. cellpadding，用於設定單元格與內容的間距</h3>
+    <div>
+        <table border="2" cellpadding="10">
+            <tr>
+                <th>姓　名</th>
+                <th>性　別</th>
+                <th>年　齡</th>
+            </tr>
+            <tr>
+                <td>王一博</td>
+                <td>男</td>
+                <td>25歲</td>
+            </tr>
+            <tr>
+                <td>蔡徐坤</td>
+                <td>男</td>
+                <td>24歲</td>
+            </tr>
+            <tr>
+                <td>金秀賢</td>
+                <td>男</td>
+                <td>34歲</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr><br>
+
+    <h3>4. cellspacing，用於設定每格單元格的間距大小</h3>
+    <div>
+        <table border="2" cellspacing="0">
+            <tr>
+                <th>姓　名</th>
+                <th>性　別</th>
+                <th>年　齡</th>
+            </tr>
+            <tr>
+                <td>王一博</td>
+                <td>男</td>
+                <td>25歲</td>
+            </tr>
+            <tr>
+                <td>蔡徐坤</td>
+                <td>男</td>
+                <td>24歲</td>
+            </tr>
+            <tr>
+                <td>金秀賢</td>
+                <td>男</td>
+                <td>34歲</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr><br>
+
+    <h3>4. width/height，用於設定表格大小</h3>
+    <div>
+        <table border="2" cellspacing="0" width="500" height="300">
+            <tr>
+                <th>姓　名</th>
+                <th>性　別</th>
+                <th>年　齡</th>
+            </tr>
+            <tr>
+                <td>王一博</td>
+                <td>男</td>
+                <td>25歲</td>
+            </tr>
+            <tr>
+                <td>蔡徐坤</td>
+                <td>男</td>
+                <td>24歲</td>
+            </tr>
+            <tr>
+                <td>金秀賢</td>
+                <td>男</td>
+                <td>34歲</td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 
 </html>
