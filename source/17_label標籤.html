@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label標籤</title>
+</head>
+
+<body>
+    <h3>label使用在表單裡面，可以跟表單元素作為綁定。<br>
+        在點擊文字或其他元素時，會自動選擇其綁定的元素。<br>
+        可以提升用戶的使用體驗。<br>
+    </h3>
+
+    <form action="deom.php" method="post" name="form1">
+        <label for="username">用戶名稱:</label><input type="text" id="username" name="username"><br>
+        性別: <input type="radio" id="male" name="gender"><label for="male">男</label>
+        <input type="radio" id="female" name="gender" checked="checked"><label for="female">女</label>
+    </form>
+</body>
+
+</html>
