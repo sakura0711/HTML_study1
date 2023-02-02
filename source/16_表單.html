@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 在定義標單之前，應先定義表單域 form -->
+    <form action="demo.php" method="post" name="form1">
+
+        <!-- type = text 為文字輸入框，用戶可以輸入任何文字 -->
+        <!-- value 屬性是在頁面被加載時默認填入的內容，某些情況下用於傳遞給後台資訊時方便辨識資料型別 -->
+        <!-- maxlength 屬性是用來規定用戶輸入的最大字符長度 -->
+        用戶名稱 : <input type="text" name="username"  maxlength="10"><br>
+
+        <!-- type = password 為密碼輸入框，輸入的文字沒有辦法被看見 -->
+        密　　碼 : <input type="password" name="psw"><br>
+
+        <!-- type = radio 為單選框，只能勾選一樣 -->
+        <!-- name 屬性是用於區將不同的選項進行分類，在使用單選框匯市複選框時，應注意其 name 值必須相同。
+             也用於傳遞給後台資訊時方便辨識資料型別-->
+        <!-- checked 屬性是在頁面被加載時默認勾選 -->
+        性　　別 : <input type="radio" name="sex" value="male">男
+        <input type="radio" name="sex" value="female" checked="checked">女
+        <input type="radio" name="sex" value="none">不願透露<br>
+
+        <!-- type = checkbox 為複選框，可以勾選多樣 -->
+        你的喜好 : <input type="checkbox">吃飯
+        <input type="checkbox">睡覺
+        <input type="checkbox">我全都要!<br>
+
+    </form>
+</body>
+
+</html>
