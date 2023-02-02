@@ -12,119 +12,151 @@
     <h4>!歡迎使用OOWOO網站，請先注冊以使用完整功能!</h4>
 
     <form action="demo.html" method="post" name="signUp">
-        <label for="username">你的暱稱</label> : <input type="text" id="username" name="username"><br>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <td><label for="username">你的暱稱</label> : </td>
+                <td><input type="text" id="username" name="username"><br></td>
+            </tr>
+            <tr>
+                <td>你的性別 :</td>
+                <td>
+                    <input type="radio" name="gender" id="male"><label for="male">男</label>
+                    <input type="radio" name="gender" id="female"><label for="female">女</label><br>
+                </td>
+            </tr>
+            <!-- 生日 -->
+            <tr>
+                <div>
+                    <td>你的生日 :</td>
+                    <!-- 年 -->
+                    <td>
+                        <select name="year" id="year">
+                            <!-- option{$@2000}*20 快速生成-->
+                            <option value="" selected="selected">--請選擇年--</option>
+                            <option value="">1995</option>
+                            <option value="">1996</option>
+                            <option value="">1997</option>
+                            <option value="">1998</option>
+                            <option value="">1999</option>
+                            <option value="">2000</option>
+                            <option value="">2001</option>
+                            <option value="">2002</option>
+                            <option value="">2003</option>
+                            <option value="">2004</option>
+                            <option value="">2005</option>
+                            <option value="">2006</option>
+                            <option value="">2007</option>
+                            <option value="">2008</option>
+                            <option value="">2009</option>
+                            <option value="">2010</option>
+                            <option value="">2011</option>
+                            <option value="">2012</option>
+                            <option value="">2013</option>
+                            <option value="">2014</option>
+                        </select>
+                        <!-- 月 -->
+                        <select name="month" id="month">
+                            <option value="" selected="selected">--請選擇月--</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select>
+                        <!-- 日 -->
+                        <select name="day" id="day">
+                            <option value="" selected="selected">--請選擇日--</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                        </select><br>
+                    </td>
+                </div>
+            </tr>
 
-        你的性別 :
-        <input type="radio" name="gender" id="male"><label for="male">男</label>
-        <input type="radio" name="gender" id="female"><label for="female">女</label><br>
+            <tr>
+                <td><label for="academic qualifications">你的學歷 : </label></td>
+                <td><input type="text" id="academic qualifications"><br></td>
+            </tr>
 
-        <!-- 生日 -->
-        <div>
-            你的生日 :
-            <!-- 年 -->
-            <select name="year" id="year">
-                <!-- option{$@2000}*20 快速生成-->
-                <option value="" selected="selected">--請選擇年--</option>
-                <option value="">1995</option>
-                <option value="">1996</option>
-                <option value="">1997</option>
-                <option value="">1998</option>
-                <option value="">1999</option>
-                <option value="">2000</option>
-                <option value="">2001</option>
-                <option value="">2002</option>
-                <option value="">2003</option>
-                <option value="">2004</option>
-                <option value="">2005</option>
-                <option value="">2006</option>
-                <option value="">2007</option>
-                <option value="">2008</option>
-                <option value="">2009</option>
-                <option value="">2010</option>
-                <option value="">2011</option>
-                <option value="">2012</option>
-                <option value="">2013</option>
-                <option value="">2014</option>
-            </select>
-            <!-- 月 -->
-            <select name="month" id="month">
-                <option value="" selected="selected">--請選擇月--</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option>
-                <option value="">11</option>
-                <option value="">12</option>
-            </select>
-            <!-- 日 -->
-            <select name="day" id="day">
-                <option value="" selected="selected">--請選擇日--</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option>
-                <option value="">11</option>
-                <option value="">12</option>
-                <option value="">13</option>
-                <option value="">14</option>
-                <option value="">15</option>
-                <option value="">16</option>
-                <option value="">17</option>
-                <option value="">18</option>
-                <option value="">19</option>
-                <option value="">20</option>
-                <option value="">21</option>
-                <option value="">22</option>
-                <option value="">23</option>
-                <option value="">24</option>
-                <option value="">25</option>
-                <option value="">26</option>
-                <option value="">27</option>
-                <option value="">28</option>
-                <option value="">29</option>
-                <option value="">30</option>
-                <option value="">31</option>
-            </select><br>
-        </div>
+            <tr>
+                <span>
+                    <td>你的愛好:</td>
+                    <td>
+                        <input type="checkbox" name="hobby" id="cat"><label for="cat">貓貓</label>
+                        <input type="checkbox" name="hobby" id="eat"><label for="eat">吃飯</label>
+                        <input type="checkbox" name="hobby" id="sleep"><label for="sleep">睡覺</label>
+                        <input type="checkbox" name="hobby" id="watchmovie"><label for="watchmovie">看劇</label>
+                        <input type="checkbox" name="hobby" id="draw"><label for="draw">畫畫</label>
+                    </td>
+                    <br>
+                </span>
+            </tr>
 
-        <label for="academic qualifications">你的學歷 : </label><input type="text" id="academic qualifications"><br>
+            <tr>
+                <td>自我介紹 : </td>
+                <td><textarea name="selfintroduction" id="introduction" cols="30" rows="10"></textarea></td>
+            </tr>
 
-        <span>
-            你的愛好:
-            <input type="checkbox" name="hobby" id="cat"><label for="cat">貓貓</label>
-            <input type="checkbox" name="hobby" id="eat"><label for="eat">吃飯</label>
-            <input type="checkbox" name="hobby" id="sleep"><label for="sleep">睡覺</label>
-            <input type="checkbox" name="hobby" id="watchmovie"><label for="watchmovie">看劇</label>
-            <input type="checkbox" name="hobby" id="draw"><label for="draw">畫畫</label>
-            <br>
-        </span>
+            <tr>
+                <td></td>
+                <td>
+                    <h3>請記住以下三點</h3>
+                    <ul>
+                        <li>請善待貓貓</li>
+                        <li>貓貓才是正義</li>
+                        <li>我想不到了...</li>
+                    </ul>
+                </td>
+            </tr>
 
-        自我介紹 : <textarea name="selfintroduction" id="introduction" cols="30" rows="10"></textarea><br>
-
-        <h3>請記住以下三點</h3>
-        <ul>
-            <li>請善待貓貓</li>
-            <li>貓貓才是正義</li>
-            <li>我想不到了...</li>
-        </ul>
-
-        <a href="#">我是會員了，讓我登入!!</a><br><br>
-        <input type="submit" value="確認提交">
-        <input type="checkbox" name="agree" id="agree" checked="checked"><label for="agree">我已詳閱相關規定</label>
-        <br>
-        <input type="reset" value="清除重填">
+            <tr>
+                <td colspan="2"><a href="#">我是會員了，讓我登入!!</a></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="確認提交">
+                    <input type="checkbox" name="agree" id="agree" checked="checked"><label for="agree">我已詳閱相關規定</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="reset" value="清除重填"></td>
+            </tr>
+        </table>
     </form>
 
 </body>
