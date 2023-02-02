@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉式列表</title>
+</head>
+
+<body>
+    <form action="demo.php" method="post" name="form1">
+        飲料喜愛調查表<br>
+
+        甜度喜好:&nbsp; 
+        <input type="radio" name="sugar level" id="nosuger"><label for="nosuger">無糖</label>
+        <input type="radio" name="sugar level" id="low sugar"><label for="low sugar">微糖</label>
+        <input type="radio" name="sugar level" id="half sugar"><label for="half sugar">半糖</label>
+        <input type="radio" name="sugar level" id="less sugar"><label for="less sugar">少糖</label>
+        <input type="radio" name="sugar level" id="standard"><label for="standard">正常甜</label>
+        <br>
+        
+        冰塊量:&nbsp;
+        <input type="radio"name="ice level" id="ice"><label for="ice">去冰</label>
+        <input type="radio"name="ice level" id="low ice"><label for="low ice">微冰</label>
+        <input type="radio"name="ice level" id="less ice"><label for="less ice">少冰</label>
+        <input type="radio"name="ice level" id="normal"><label for="normal">正常冰</label>
+        <input type="radio"name="ice level" id="extra ice"><label for="extra ice">多冰</label>
+        <input type="radio"name="ice level" id="room temperature"><label for="room temperature">常溫</label>
+        <br>
+
+        飲料店:&nbsp;
+        <select name="beverage shop" id="beverage shop">
+
+            <!-- selected="selected" 時，在加載標單時默認的選項。 -->
+            <!-- value屬性指定提交表單時要發送到服務器的值。 -->
+            <option value="" selected="selected">先喝道</option>
+            <option value="">紅太陽</option>
+            <option value="">茶之魔手</option>
+            <option value="">可不可</option>
+            <option value="">麻古</option>
+            <option value="">鮮茶道</option>
+            <option value="">大苑子</option>
+            <option value="">迷客夏</option>
+
+        </select>
+
+        
+
+    </form>
+</body>
+
+</html>
