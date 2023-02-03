@@ -11,17 +11,18 @@
 
         /* 標籤選擇器，可以使所有的html標籤變更樣式 */
         p {
-            color: aqua;
-            font-size: 20px;
+            color: rgba(145, 255, 149, 0.215);
+            font-size: 15+px;
         }
 
         div {
             color: pink;
-            font-size: 20px;
+            font-size: 15px;
         }
 
-         /* 類選選擇器。可以更改擁有相同 class 屬性的標籤樣式 */
-         .red{
+        /* 類選選擇器。可以更改擁有相同 class 屬性的標籤樣式 */
+        /* 小口訣 : 樣式.點定義 結構(class)調用 一個或多個 開發最常用 */
+        .red{
             color:crimson;
             font-size: large;
         }
@@ -29,9 +30,13 @@
 </head>
 
 <body>
+
+    <!-- 使用標籤選擇器更改樣式 -->
     <p>我是一段由css控制的文字~</p>
     <div>我也是一段由css控制的文字</div>
-    <p class="red">我是一段由css控制的文字，我是擁有 class 屬性的</p>
+
+    <!-- 使用classs更改標籤樣式 -->
+    <span class="red">我是一段由css控制的文字，我是擁有 class 屬性的</span>
 </body>
 
 </html>
