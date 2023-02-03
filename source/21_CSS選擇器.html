@@ -8,6 +8,7 @@
     <title>終於~</title>
     <!-- CSS 可以寫在head裡面，不過之後會獨立成一個文檔 -->
     <style>
+
         /* 標籤選擇器，可以使所有的html標籤變更樣式 */
         p {
             color: aqua;
@@ -18,12 +19,19 @@
             color: pink;
             font-size: 20px;
         }
+
+         /* 類選選擇器。可以更改擁有相同 class 屬性的標籤樣式 */
+         .red{
+            color:crimson;
+            font-size: large;
+        }
     </style>
 </head>
 
 <body>
     <p>我是一段由css控制的文字~</p>
     <div>我也是一段由css控制的文字</div>
+    <p class="red">我是一段由css控制的文字，我是擁有 class 屬性的</p>
 </body>
 
 </html>
