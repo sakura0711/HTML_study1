@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字?蚊子?</title>
+    <style>
+
+        /* -------------------- font-size 屬性 -------------------- */
+        .containerSize {
+            /* 可以設置字體大小。 */
+            font-size: 24px;
+        }
+
+        /* -------------------- font-family 屬性 -------------------- */
+        /* 在 font-family 屬性中，可以定義多個字體樣式。
+        瀏覽器會依據先後順序來設定字體的樣式，當目前樣式無法顯示時會往下替換。 */
+        /* 並且通常字體名稱會使用英文 */
+        .simsun {
+            font-family: SimSun, DFKai-SB;
+        }
+
+        .microsoft {
+            font-family: "Microsoft YaHei", DFKai-SB;
+        }
+
+        /* -------------------- font-weight 屬性 -------------------- */
+        .normalWeight{
+            /* 一般情況下，會使用數字進行設定 */
+            /* normal(正常) 等於 400*/
+            font-weight: 400;
+        }
+        .boldWeight{
+            /*  bold(加粗) 等於 700  */
+            font-weight: 700;
+        }
+
+        /* -------------------- font-style 屬性 -------------------- */
+        .italicStyle{
+            /* 將文字改為斜體，一般不常用到。可以使用 <em></em> 代替 */
+            font-style: italic;
+        }
+        .normalStyle{
+            /* 將文字改回正常狀態，比較常用到 */
+            font-style: normal;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h3 class="simsun containerSize">我是宋體，可是我看不太出來差別在哪....</h3>
+    <h3 class="microsoft containerSize">或許再加一個微軟雅黑就看的出來了</h3>
+
+    <hr>
+
+    <ul>
+        <li>我是一段正常的文字</li>
+        <li class="boldWeight">我是由 font-weight 控制粗細的文字</li>
+    </ul>
+
+    <hr>
+
+    <ul>
+        <li class="italicStyle">我是一段斜斜的文字</li>
+        <li><em class="normalStyle">我把斜斜文字改正了!</em></li>
+    </ul>
+
+    
+</body>
+
+</html>
