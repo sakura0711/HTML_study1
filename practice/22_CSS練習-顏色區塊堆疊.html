@@ -7,23 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>一堆盒子</title>
     <style>
-        .redBox{
+
+        /* 使用多類名來實作CSS樣式，有助於日後更改樣式更加方便 */
+        .box{
             width: 200px;
             height: 200px;
+        }
+        .red{
             background-color:red;
         }
-        .greenBox{
-            width: 200px;
-            height: 200px;
+        .green{
+
             background-color:green;
         }
     </style>
 </head>
 
 <body>
-    <div class="redBox"></div>
-    <div class="greenBox"></div>
-    <div class="redBox"></div>
+    <div class="red box"></div>
+    <div class="green box"></div>
+    <div class="red box"></div>
 </body>
 
 </html>
