@@ -8,8 +8,7 @@
     <title>終於~</title>
     <!-- CSS 可以寫在head裡面，不過之後會獨立成一個文檔 -->
     <style>
-
-        /* 標籤選擇器，可以使所有的html標籤變更樣式 */
+        /* ----標籤選擇器，可以使所有的html標籤變更樣式---- */
         p {
             color: rgba(145, 255, 149, 0.215);
             font-size: 15+px;
@@ -20,11 +19,22 @@
             font-size: 15px;
         }
 
-        /* 類選選擇器。可以更改擁有相同 class 屬性的標籤樣式 */
-        /* 小口訣 : 樣式.點定義 結構(class)調用 一個或多個 開發最常用 */
-        .red{
-            color:crimson;
+        /* ----類選選擇器。可以更改擁有相同 class 屬性的標籤樣式---- */
+        /* 小口訣 : 樣式.點定義 結構類(class)調用 一個或多個 開發最常用 */
+        .red {
+            color: crimson;
             font-size: large;
+        }
+
+        .box {
+            background-color: wheat;
+        }
+
+        /* id選擇器。可以更改有有相同id屬性標籤樣式 */
+        /* 小口訣 : 樣式#定義 結構(id)調用 只能用一次 別人勿使用 */
+        #mainContainer {
+            font-size: 23px;
+            color: rgb(17, 0, 255);
         }
     </style>
 </head>
@@ -35,8 +45,15 @@
     <p>我是一段由css控制的文字~</p>
     <div>我也是一段由css控制的文字</div>
 
-    <!-- 使用classs更改標籤樣式 -->
-    <span class="red">我是一段由css控制的文字，我是擁有 class 屬性的</span>
+    <!-- 使用class更改標籤樣式 -->
+    <span class="red">我是一段由css控制的文字，我是擁有 class 屬性的</span><br>
+
+    <!-- 使用多類名(class)更改樣式名稱，為最常使用手段 -->
+    <!-- 須注意中間必須使用空格分開 -->
+    <span class="red box">我採用多類名來更改CSS樣式</span><br>
+
+    <!-- 使用id選擇器更改樣式 -->
+    <span id="mainContainer">我採用id選擇器來更改CSS樣式</span><br>
 </body>
 
 </html>
