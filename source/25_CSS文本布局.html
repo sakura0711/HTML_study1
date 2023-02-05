@@ -7,22 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我想不到標題了...</title>
     <style>
-
         /*---------- 文字對齊效果 ---------- */
         .center {
             /* 置中對齊 */
             text-align: center;
         }
+
         .left {
             /* 置左對齊 */
             text-align: left;
         }
+
         .right {
             /* 置右對齊 */
             text-align: right;
         }
 
-        
+        /* 文字裝飾效果，例如上划線、下划線、刪除線等... */
+        .none {
+            /* 沒有效果  最常用*/
+            text-decoration: none;
+        }
+
+        .underline {
+            /* 下划線  常用 */
+            text-decoration: underline;
+        }
+
+        .overline {
+            /* 上划線  幾乎不用 */
+            text-decoration: overline;
+        }
+
+        .line-through {
+            /* 刪除線  少用，與<del></del>是相同效果*/
+            text-decoration: line-through;
+        }
     </style>
 </head>
 
@@ -33,10 +53,14 @@
 
     <hr>
 
-    
+    <h3 class="none">我是一段神奇的文字</h3>
+    <h3 class="underline">我是一段神奇的文字</h3>
+    <h3 class="overline">我是一段神奇的文字</h3>
+    <h3 class="line-through">我是一段神奇的文字</h3>
+
+    <hr>
 
 
-    
 </body>
 
 </html>
