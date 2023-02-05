@@ -43,6 +43,17 @@
             /* 刪除線  少用，與<del></del>是相同效果*/
             text-decoration: line-through;
         }
+
+        /* ---------- 文字縮進效果 ----------*/
+        .indentationPX{
+            /* 第一種用法，使用像素大小指定 */
+            text-indent: 20px;
+        }
+        .indentationEM{
+            /* 第二種用法，根據當前文字大小來縮排 */
+            /* em 代表當前文字大小，假設現在文字大小為16px，2em 就等於縮進 32px */
+            text-indent:2em;
+        }
     </style>
 </head>
 
@@ -60,7 +71,14 @@
 
     <hr>
 
+    <h3>文字文字文字文字文字文字文字文字</h3>
+    <h3 class="indentationPX">文字文字文字文字文字文字文字文字</h3>
+    <h3 class="indentationEM">文字文字文字文字文字文字文字文字</h3>
+    <h3>文字文字文字文字文字文字文字文字</h3>
 
+    <hr>
+
+    
 </body>
 
 </html>
