@@ -1,0 +1,31 @@
+body{
+    font: 16px "Microsoft Yahei";
+}
+#Header{
+    margin: 0 auto;
+    text-align: center;
+}
+#Container{
+    line-height: 25px;
+}
+
+.logo, .Header__title{
+    height: 35px;
+}
+.Container__text{
+    font-weight: 100;
+    text-indent: 50px;
+}
+
+.cat--image{
+    height: 350px;
+}
+
+.hyperlink{
+    color: rgb(78, 78, 255);
+    text-decoration: none;
+}
+.hyperlink:hover{
+    color:steelblue;
+    text-decoration: underline;
+}
