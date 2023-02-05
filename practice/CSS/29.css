@@ -1,5 +1,5 @@
 body{
-    font: 16px "Microsoft Yahei";
+    font: 17px/27px "Microsoft Yahei";
 }
 #Header{
     margin: 0 auto;
@@ -9,18 +9,23 @@ body{
     line-height: 25px;
 }
 
-.logo, .Header__title{
+.logo, .Header__search{
     height: 35px;
 }
 .Container__text{
-    font-weight: 100;
+    font-weight: 500;
     text-indent: 50px;
 }
 
 .cat--image{
-    height: 350px;
+    margin: 0 auto;
 }
-
+.imageAnnotation{
+    margin: 0 auto;
+    color: slategray;
+    font-size: 16px;
+    line-height: 26px;
+}
 .hyperlink{
     color: rgb(78, 78, 255);
     text-decoration: none;
@@ -28,4 +33,7 @@ body{
 .hyperlink:hover{
     color:steelblue;
     text-decoration: underline;
+}
+.space{
+    height:100px;
 }
