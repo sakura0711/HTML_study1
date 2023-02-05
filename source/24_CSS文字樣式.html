@@ -46,6 +46,15 @@
             /* 將文字改回正常狀態，比較常用到 */
             font-style: normal;
         }
+
+        /* 另外也可以同時設置多個字體屬性，可以使代碼更加地簡潔 */
+        .diversityStyle{
+            /* 但是必須遵守以下格式 */
+            /* font : font-style font-weight  font-size/line-height font-family */
+            font: italic 400 16px "Microsoft Yahei";
+            /* 必要時可以省略 font-style 屬性和 font-weight 屬性，但是 size 和 family 必須保留 */
+            /* font: 16px "Microsoft Yahei"; */
+        }
         
     </style>
 </head>
@@ -68,7 +77,9 @@
         <li><em class="normalStyle">我把斜斜文字改正了!</em></li>
     </ul>
 
-    
+    <hr>
+
+    <h4 class="divergenceStyle">&gt;字體複合屬性&lt;</h4>
 </body>
 
 </html>
