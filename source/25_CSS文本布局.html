@@ -54,6 +54,12 @@
             /* em 代表當前文字大小，假設現在文字大小為16px，2em 就等於縮進 32px */
             text-indent:2em;
         }
+
+        /* ---------- 文字行高效果 ----------*/
+        .lineheight{
+            /* 文字行高為 "上間距" + "文字大小" + "下間距" */
+            line-height: 46px;
+        }
     </style>
 </head>
 
@@ -78,7 +84,11 @@
 
     <hr>
 
-    
+    <span>正常文字</span><br>
+    <span class="lineheight">改變行高</span><br>
+    <span>正常文字</span><br>
+
+    <hr>
 </body>
 
 </html>
