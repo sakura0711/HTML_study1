@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我好亂啊...</title>
+    <style>
+        table {
+            height: 100px;
+        }
+
+        td {
+            width: 300px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        .one {
+            background-color: pink;
+        }
+
+        .two {
+            background-color: #59ffc8;
+        }
+
+        .image {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-size: 40px;">
+        行內塊元素的特性為，一行內可以容納多個標籤<br>
+        並且大小可以透過設置改變<br>
+        常見的行內塊元素有以下幾種<br>
+    </h1>
+    <h1 class="title">輸入框 input</h1>
+    <input type="text" class="one">
+    <input type="text" class="two">
+    <input type="text" class="one">
+    <br>
+
+    <h1 class="title">圖像標籤 image</h1>
+    <img src="../assets/images/36/youtube.png" alt="" class="one image">
+    <img src="../assets/images/36/spotify.png" alt="" class="two image">
+    <img src="../assets/images/36/youtube.png" alt="" class="one image">
+    <img src="../assets/images/36/spotify.png" alt="" class="two image">
+
+    <h1 class="title">表格標籤 td 標籤</h1>
+    <table border="2">
+        <thead>
+            <tr>
+                <th class="one">index</th>
+                <th class="two">index</th>
+                <th class="one">index</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="two">000</td>
+                <td class="one">111</td>
+                <td class="two">222</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
