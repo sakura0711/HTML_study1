@@ -12,15 +12,19 @@
 
     /* 也可以透過縮寫生成其他屬性 */
 
-    /* 例如 text-align: center; */
+    /* 例如 text-align: center; (文字對齊)*/
     /* 可以直接使用 tac 生成 */
     text-align: center;
 
-    /* 例如 text-indent: 2em; */
+    /* 例如 text-indent: 2em; (文字縮排)*/
     /* 可以直接使用 ti2em 生成*/
     text-indent: 2em;
 
-    /* 例如 line-height: 20px; */
+    /* 例如 line-height: 20px; (行距/行高)*/
     /* 可以使用 lh2px 生成 */
     line-height: 20px;
+
+    /* 例如 text-decoration: none; (文字划線效果)*/
+    /* 可以輸入 tdn 生成 */
+    text-decoration: none;
 }
