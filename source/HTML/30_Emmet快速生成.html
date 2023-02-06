@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事半功倍!</title>
+</head>
+
+<body>
+
+    <!-- 直接生成標籤輸入 div 按 TAB 鍵 -->
+    <div></div>
+
+    <!-- 自動生成 Class 屬性，默認生成 div -->
+    <!-- .demo 按 TAB -->
+    <div class="demo"></div>
+    <!-- p.demo 按 TAB -->
+    <p class="demo"></p>
+
+    <!-- 生成多個標籤 -->
+    <!-- div*3 按 TAB-->
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- 自動計數，可以由 $ 取代 -->
+    <!-- div.test$*4  按 TAB-->
+    <div class="test1"></div>
+    <div class="test2"></div>
+    <div class="test3"></div>
+    <div class="test4"></div>
+
+    <!-- 設定初始值，將初始值放在 @ 後面，並加上 $  -->
+    <!-- span{$@200}*10 快速生成-->
+    <span>200</span>
+    <span>201</span>
+    <span>202</span>
+    <span>203</span>
+    <span>204</span>
+    <span>205</span>
+    <span>206</span>
+    <span>207</span>
+    <span>208</span>
+    <span>209</span>
+
+    <!-- 包含文字，可以用 {} 包住 -->
+    <!-- div{貓貓貓}*3 按 TAB-->
+    <div>貓貓貓</div>
+    <div>貓貓貓</div>
+    <div>貓貓貓</div>
+
+    <!-- 同級標籤，可以用 + 號相連 -->
+    <!-- div*2+p*2 按 TAB -->
+    <div></div>
+    <div></div>
+    <p></p>
+    <p></p>
+
+    <!-- 父級標籤，用 > 號相連 -->
+    <!-- div>ul>li*3 按 TAB-->
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>
