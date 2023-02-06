@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>真假鏈結?!</title>
+    <style>
+        body {
+            font: 400 17px "Microsoft Yahei";
+        }
+
+        /* 須注意在宣告這類型標籤時，必須按照 LVHA (link - visited - hover - active)的順序來寫 */
+        /* a:link 選擇所有未訪問的連接 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* a:visited 選擇所有已被訪問的連接 */
+        a:visited {
+            color: #ff9d00;
+        }
+
+        /* a:hover 當鼠標放置在連接上時觸發 (最常使用)*/
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* a:active 當鼠標按下但沒有放開時觸發 */
+        a:active {
+            color: skyblue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.youtube.com/" target="_blank">點我看看阿</a><br>
+    <a href="https://www.bilibili.com/" target="_blank">我也可以</a><br>
+    <a href="https://www.google.com/" target="_blank">不要點我吧...</a><br>
+    <a href="https://www.xxxx" target="_blank">未知的連接</a>
+</body>
+
+</html>
