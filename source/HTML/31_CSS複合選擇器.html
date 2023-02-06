@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Many Selectors</title>
+    <style>
+        /* 後代選擇器，使用空白隔開依序往下查找 */
+        ul li {
+            /* 只選擇 div 下面 ul 下面的 li 更改樣式 */
+            color: tomato;
+        }
+
+        ul li a {
+            color: green;
+        }
+
+        /* 子代選擇器，使用 > 來往下查找 */
+        .nav>p {
+            color: orange;
+        }
+
+        /* 並集選擇器，可以選中多個標籤修改樣式 中間用 , 隔開*/
+        div>.animal,
+        p>.container,
+        .cat {
+            color: pink;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>香菇1號</li>
+        <li>香菇2號</li>
+        <li><a href="#">香菇3號</a></li>
+    </ul>
+    <hr>
+
+    <div class="nav">
+        <p>我是兒子1號</p>
+        <p>我是2號!</p>
+        <sapn>
+            <p href="#">我不會改變顏色，因為我不是 class nav的親兒子..</p>
+        </sapn>
+    </div>
+
+    <hr>
+
+    <p><span class="cat">貓</span></p>
+    <div class="animal">
+        <p><span class="container">咪</span></p>
+        <p><span>可愛~!</span></p>
+    </div>
+
+</body>
+
+</html>
