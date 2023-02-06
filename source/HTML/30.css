@@ -1,0 +1,26 @@
+.testmethod{
+    
+    /* css 也可以運用 Emmet 快速生成元素 */
+
+    /*例如 要生成高屬性，height: 200px;*/
+    /* 可以使用 h200 快速生成 */
+    height: 200px;
+
+    /* 寬屬性，width: 200px; */
+    /* 使用 w200 快速生成 */
+    width: 200px;
+
+    /* 也可以透過縮寫生成其他屬性 */
+
+    /* 例如 text-align: center; */
+    /* 可以直接使用 tac 生成 */
+    text-align: center;
+
+    /* 例如 text-indent: 2em; */
+    /* 可以直接使用 ti2em 生成*/
+    text-indent: 2em;
+
+    /* 例如 line-height: 20px; */
+    /* 可以使用 lh2px 生成 */
+    line-height: 20px;
+}
