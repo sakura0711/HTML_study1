@@ -1,0 +1,13 @@
+.block--image__canva{
+    width: 1000px;
+    height: 200px;
+    background-image: url(../assets/images/41/image--canva.jpg);
+    background-color: rgb(242, 183, 183);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.text{
+    font: 700 20px "Microsoft Yahei";
+    text-align: center;
+    line-height: 200px;
+}
