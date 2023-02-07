@@ -26,29 +26,33 @@
             display: inline;
         }
         .inline--block{
-            width: 200px;
-            height: 1px;
+            width: 400px;
+            height: auto;
             display: inline-block;
         }
     </style>
 </head>
 
 <body>
+
+    <!-- 區塊元素轉換至行內元素 (常用) -->
     <h3 class="inline one">我明明就是區塊元素，為甚麼我後面有人....</h3>
     <h3 class="inline two">我明明就是區塊元素，為甚麼我後面有人....</h3>
     <h3 class="inline one">我明明就是區塊元素，為甚麼我後面有人....</h3>
 
     <hr>
 
+    <!-- 行內元素轉換為區塊元素 (少用)-->
     <span class="block one">Yes, 我變成老大了，整行只有我一個。空間好寬敞啊!</span>
     <span class="block two">Yes, 我變成老大了，整行只有我一個。空間好寬敞啊!</span>
     <span class="block one">Yes, 我變成老大了，整行只有我一個。空間好寬敞啊!</span>
 
     <hr>
 
-    <p class="inline--block">我也可以轉換成 行內區塊元素喔!</p>
-    <p class="inline--block">我也可以轉換成 行內區塊元素喔!</p>
-    <p class="inline--block">我也可以轉換成 行內區塊元素喔!</p>
+    <!-- 行內/區塊 元素轉換至 行內區塊元素 -->
+    <p class="inline--block one">我也可以轉換成 行內區塊元素喔!</p>
+    <p class="inline--block two">我也可以轉換成 行內區塊元素喔!</p>
+    <p class="inline--block one">我也可以轉換成 行內區塊元素喔!</p>
 </body>
 
 </html>
