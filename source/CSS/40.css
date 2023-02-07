@@ -1,0 +1,30 @@
+div{
+    padding: 0px;
+    margin: 0 auto;
+}
+.block--image{
+
+    display: inline-block;
+
+    /* 盒子樣式 */
+    height: 200px;
+    width: 200px;
+    border: slategray;
+
+    /* 圖片樣式 */
+    background-image: url(../assets/images/39/bgi--github.jpg);
+    background-repeat: no-repeat;
+    
+    /* 文字樣式 */
+    /* line-height: 50px; */
+    text-align: center;
+    color: #282d2d;
+    font-size: 20px;
+    font-weight: 700;
+}
+.one{
+    background-color: #4cffb5;
+}
+.two{
+    background-color: #e09dff;
+}

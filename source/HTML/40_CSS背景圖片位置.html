@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片排排站</title>
+    <link rel="stylesheet" href="../CSS/40.css">
+    <style>
+        /* 當方位名詞只有一個時，另外一個屬性會自動設定為 center */
+        .top-left{ 
+            /* 左上 */
+            background-position: left top;
+        }
+        .top-center{
+            /* 中上 */
+            background-position: top center;
+        }
+        .top-right{
+            /* 右上 */
+            background-position: top right;
+        }
+        .left-center{
+            /* 中偏右 */
+            background-position: center left;
+        }
+        .center{
+            /* 正中間 */
+            background-position: center center;
+        }
+        .right-center{
+            /* 中偏右 */
+            background-position: center right;
+        }
+        .bottom-left{
+            /* 左下 */
+            background-position: bottom left;
+        }
+        .bottom-center{
+            /* 中下 */
+            background-position: bottom center;
+        }
+        .bottom-right{
+            /* 右下 */
+            background-position: bottom right;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>背景圖片對齊方向</h2>
+    <div>
+        <div class="block--image top-left one">左上</div>
+        <div class="block--image top-center two">中上</div>
+        <div class="block--image top-right one">右上</div>
+    </div>
+    <div>
+        <div class="block--image left-center two">中偏左</div>
+        <div class="block--image center one">正中間</div>
+        <div class="block--image right-center two">中偏右</div>
+    </div>
+    <div>
+        <div class="block--image bottom-left one">左下</div>
+        <div class="block--image bottom-center two">中下</div>
+        <div class="block--image bottom-right one">右下</div>
+    </div>
+
+
+</body>
+
+</html>
