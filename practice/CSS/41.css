@@ -3,25 +3,23 @@
     text-align: center;
     line-height: 200px;
 }
-.block--image__canva{
+.block--image{
     width: 1000px;
     height: 200px;
+}
+.canva{
     background-image: url(../assets/images/41/image--canva.jpg);
     background-color: rgb(242, 183, 183);
     background-position: left center;
     background-repeat: no-repeat;
 }
-.block--image__youtube{
-    width: 1000px;
-    height: 200px;
+.youtube{
     background-image: url(../assets/images/41/image--youtube.png);
     background-color: rgb(183, 242, 194);
     background-position: left center;
     background-repeat: no-repeat;
 }
-.block--image__spotify{
-    width: 1000px;
-    height: 200px;
+.spotify{
     background-image: url(../assets/images/41/image--spotify.png);
     background-color: rgb(242, 183, 183);
     background-position: left center;
