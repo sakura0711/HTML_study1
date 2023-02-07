@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        .block--text{
+            height: 200px;
+            width: 200px;
+             /* 設置背景顏色 */
+             background-color: pink;
+            /* 當沒有設置時默認為 transparent (透明背景) */
+            /* background-color: transparent; */
+            line-height: 200px;
+            text-align: center;
+        }
+        .block--image{
+            display: inline-block;
+            /* 盒子大小 */
+            height: 200px;
+            width: 300px;
+
+            /* 要添加圖片時 url 為圖片路徑 or 網址 */
+            /* 默認為 background-image: none; (沒有圖片) */
+            background-image: url(../assets/images/39/bgi--github.jpg);
+
+            /* 文字樣式 */
+            /* line-height: 50px; */
+            text-align: center;
+            color: #f57803;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .normal{
+            /* 默認情況使用 repeat 平鋪效果 */
+            background-repeat: repeat;
+        }
+        .none{
+            /* 不使用平舖 */
+            /* 另外，background-repeat: 可以和 background-color 一起使用 */
+            background-repeat: no-repeat;
+            background-color: #98ecff;
+        }
+        .alongX{
+            /* 沿橫向 x 軸上平鋪 */
+            background-repeat: repeat-x;
+            background-color: #98ffc1;
+        }
+        .alongY{
+            /* 沿縱向 y 軸上平鋪 */
+            background-repeat: repeat-y;
+            background-color: #98ecff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block--text">背景顏色</div>
+
+    <hr>
+
+    <div class="block--image normal">背景圖片(正常)</div>
+    <div class="block--image none">背景圖片(不平鋪)</div>
+    <div class="block--image alongX">背景圖片(沿橫向x軸上平鋪)</div>
+    <div class="block--image alongY">背景圖片(沿縱向y軸上平鋪)</div>
+</body>
+
+</html>
