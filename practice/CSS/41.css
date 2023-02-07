@@ -6,6 +6,14 @@
     background-position: left center;
     background-repeat: no-repeat;
 }
+.block--image__youtube{
+    width: 1000px;
+    height: 200px;
+    background-image: url(../assets/images/41/image--youtube.png);
+    background-color: rgb(183, 242, 194);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
 .text{
     font: 700 20px "Microsoft Yahei";
     text-align: center;
