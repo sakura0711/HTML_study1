@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>變換</title>
+    <style>
+        *{
+            font: 400 16px "Miscrosoft Yahei"
+        }
+        .one{
+            background-color: pink;
+        }
+        .two{
+            background-color: rgb(125, 127, 207);
+        }
+        .block{
+            width: 100%;
+            display: block;
+        }
+        .inline{
+            height: 200px;
+            width: 200px;
+            display: inline;
+        }
+        .inline--block{
+            width: 200px;
+            height: 1px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="inline one">我明明就是區塊元素，為甚麼我後面有人....</h3>
+    <h3 class="inline two">我明明就是區塊元素，為甚麼我後面有人....</h3>
+    <h3 class="inline one">我明明就是區塊元素，為甚麼我後面有人....</h3>
+
+    <hr>
+
+    <span class="block one">Yes, 我變成老大了，整行只有我一個。空間好寬敞啊!</span>
+    <span class="block two">Yes, 我變成老大了，整行只有我一個。空間好寬敞啊!</span>
+    <span class="block one">Yes, 我變成老大了，整行只有我一個。空間好寬敞啊!</span>
+
+    <hr>
+
+    <p class="inline--block">我也可以轉換成 行內區塊元素喔!</p>
+    <p class="inline--block">我也可以轉換成 行內區塊元素喔!</p>
+    <p class="inline--block">我也可以轉換成 行內區塊元素喔!</p>
+</body>
+
+</html>
