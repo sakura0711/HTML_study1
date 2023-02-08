@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打壓你!</title>
+
+    <!-- 數字越大 權重越大 -->
+
+    <!-- 外部引入樣式表 (層級最低) -->
+    <link rel="stylesheet" href="../CSS/47.css">
+
+    <!-- 內部樣式表 (層級稍低) -->
+    <style>
+        /* 通配符/繼承，選擇器權重 (0, 0, 0, 0) "最低" */
+        * {
+            background-color: #fff;
+        }
+
+        /* 元素選擇器，選擇器權重 (0, 0, 0, 1) */
+        div {
+            background-color: rgb(110, 168, 255);
+        }
+
+        /* 類選擇器/偽類選擇器，選擇器權重 (0, 0, 1, 0) */
+        .test-style{
+            background-color: plum;
+        }
+
+        /* id 選擇器，選擇器權重 (0, 1, 0, 0) */
+        #container{
+            background-color: greenyellow;
+        }
+        
+        /* --------- !important 權重 "最高"，覆蓋所有樣式，一枝獨秀 --------- */
+        /* --------- !important 權重 "最高"，覆蓋所有樣式，一枝獨秀 --------- */
+        /* --------- !important 權重 "最高"，覆蓋所有樣式，一枝獨秀 --------- */
+        p{
+            background-color: #26ff9a!important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 行內樣式表，選擇器權重 (1, 0, 0, 0) 高 -->
+    <h2 style="background-color: rgb(255, 106, 106)">空空的...</h2>
+</body>
+
+</html>
