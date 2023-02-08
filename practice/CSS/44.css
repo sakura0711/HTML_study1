@@ -1,0 +1,45 @@
+.nav>a{
+    width: 120px;
+    height: 58px;
+    
+    font: 600 16px "Microsoft YaHei";
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav .bg1{
+    display: inline-block;
+    background-image: url(../assets/images/44/bg1.png);
+}
+.nav .bg1:hover{
+    background-image: url(../assets/images/44/bg3.png);
+}
+.nav .bg2{
+    display: inline-block;
+    background-image: url(../assets/images/44/bg2.png);
+}
+.nav .bg2:hover{
+    background-image: url(../assets/images/44/bg5.png);
+}
+.bg3{
+    display: inline-block;
+    background-image: url(../assets/images/44/bg3.png);
+}
+.nav .bg3:hover{
+    background-image: url(../assets/images/44/bg2.png);
+}
+.bg4{
+    display: inline-block;
+    background-image: url(../assets/images/44/bg5.png);
+}
+.nav .bg4:hover{
+    background-image: url(../assets/images/44/bg1.png);
+}
+.nav .bg5{
+    display: inline-block;
+    background-image: url(../assets/images/44/bg7.png);
+}
+.nav .bg5:hover{
+    background-image: url(../assets/images/44/bg5.png);
+}
