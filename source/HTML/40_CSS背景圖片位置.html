@@ -9,63 +9,120 @@
     <link rel="stylesheet" href="../CSS/40.css">
     <style>
         /* 當方位名詞只有一個時，另外一個屬性會自動設定為 center */
-        .top-left{ 
+        .top-left_relatively{ 
             /* 左上 */
             background-position: left top;
         }
-        .top-center{
+        .top-center_relatively{
             /* 中上 */
             background-position: top center;
         }
-        .top-right{
+        .top-right_relatively{
             /* 右上 */
             background-position: top right;
         }
-        .left-center{
-            /* 中偏右 */
+        .left-center_relatively{
+            /* 中偏左 */
             background-position: center left;
         }
-        .center{
+        .center_relatively{
             /* 正中間 */
             background-position: center center;
         }
-        .right-center{
+        .right-center_relatively{
             /* 中偏右 */
             background-position: center right;
         }
-        .bottom-left{
+        .bottom-left_relatively{
             /* 左下 */
             background-position: bottom left;
         }
-        .bottom-center{
+        .bottom-center_relatively{
             /* 中下 */
             background-position: bottom center;
         }
-        .bottom-right{
+        .bottom-right_relatively{
             /* 右下 */
             background-position: bottom right;
         }
         
+        /* 精確單位，透過 x y 值來控制，並且順序為 x y */
+        .top-left_absolute{ 
+            /* 左上 */
+            background-position: 30px 30px;
+        }
+        .top-center_absolute{
+            /* 中上 */
+            background-position: 75px 30px;
+        }
+        .top-right_absolute{
+            /* 右上 */
+            background-position: 115px 30px;
+        }
+        .left-center_absolute{
+            /* 中偏左 */
+            background-position: 30px 75px;
+        }
+        .center_absolute{
+            /* 正中間 */
+            background-position: 75px 75px;
+        }
+        .right-center_absolute{
+            /* 中偏右 */
+            background-position: 115px 75px;
+        }
+        .bottom-left_absolute{
+            /* 左下 */
+            background-position: 30px 125px;
+        }
+        .bottom-center_absolute{
+            /* 中下 */
+            background-position: 75px 125px;
+        }
+        .bottom-right_absolute{
+            /* 右下 */
+            background-position: 115px 125px;
+        }
     </style>
 </head>
 
 <body>
-    <h2>背景圖片對齊方向</h2>
+    <h2>背景圖片對齊方向 相對位置</h2>
     <div>
-        <div class="block--image top-left one">左上</div>
-        <div class="block--image top-center two">中上</div>
-        <div class="block--image top-right one">右上</div>
+        <div class="block--image top-left_relatively one">左上</div>
+        <div class="block--image top-center_relatively two">中上</div>
+        <div class="block--image top-right_relatively one">右上</div>
     </div>
     <div>
-        <div class="block--image left-center two">中偏左</div>
-        <div class="block--image center one">正中間</div>
-        <div class="block--image right-center two">中偏右</div>
+        <div class="block--image left-center_relatively two">中偏左</div>
+        <div class="block--image center_relatively one">正中間</div>
+        <div class="block--image right-center_relatively two">中偏右</div>
     </div>
     <div>
-        <div class="block--image bottom-left one">左下</div>
-        <div class="block--image bottom-center two">中下</div>
-        <div class="block--image bottom-right one">右下</div>
+        <div class="block--image bottom-left_relatively one">左下</div>
+        <div class="block--image bottom-center_relatively two">中下</div>
+        <div class="block--image bottom-right_relatively one">右下</div>
     </div>
+
+
+    <h2>背景圖片對齊方向 絕對位置</h2>
+    <div>
+        <div class="block--image top-left_absolute one">左上</div>
+        <div class="block--image top-center_absolute two">中上</div>
+        <div class="block--image top-right_absolute one">右上</div>
+    </div>
+    <div>
+        <div class="block--image left-center_absolute two">中偏左</div>
+        <div class="block--image center_absolute one">正中間</div>
+        <div class="block--image right-center_absolute two">中偏右</div>
+    </div>
+    <div>
+        <div class="block--image bottom-left_absolute one">左下</div>
+        <div class="block--image bottom-center_absolute two">中下</div>
+        <div class="block--image bottom-right_absolute one">右下</div>
+    </div>
+
+    
 
 
 </body>
