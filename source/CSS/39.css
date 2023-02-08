@@ -1,0 +1,145 @@
+/* ------------------------ 基礎設定 ------------------------*/
+
+.block--text {
+    height: 200px;
+    width: 200px;
+    /* 設置背景顏色 */
+    background-color: pink;
+    /* 當沒有設置時默認為 transparent (透明背景) */
+    /* background-color: transparent; */
+    line-height: 200px;
+    text-align: center;
+}
+
+.block--image {
+    display: inline-block;
+    /* 盒子大小 */
+    height: 200px;
+    width: 300px;
+
+    /* 要添加圖片時 url 為圖片路徑 or 網址 */
+    /* 默認為 background-image: none; (沒有圖片) */
+    background-image: url(../assets/images/39/bgi--github.jpg);
+
+    /* 文字樣式 */
+    /* line-height: 50px; */
+    text-align: center;
+    color: #f57803;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.inline-text {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+    /* 文字樣式 */
+    line-height: 50px;
+    text-align: center;
+    color: #901f00;
+    font-size: 20px;
+    font-weight: 700;
+}
+.inline-block {
+    display: inline-block;
+    height: 100px;
+    width: 50px;
+}
+
+/* ------------------------ 背景顏色透明度------------------------*/
+
+.lvNONE {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.lvONE {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.lvTWO {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.lvTHR {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.lvFOUR {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.lvFIVE {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lvSIX {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.lvSEVEN {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.lvEIGHT {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lvNI {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lvTEN {
+    /* 背景透明效果數值 0.1 ~ 1  */
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* ------------------------ 圖片平鋪效果 ------------------------*/
+
+.normal {
+    /* 默認情況使用 repeat 平鋪效果 */
+    background-repeat: repeat;
+}
+
+.none {
+    /* 不使用平舖 */
+    /* 另外，background-repeat: 可以和 background-color 一起使用 */
+    background-repeat: no-repeat;
+    background-color: #98ecff;
+}
+
+.alongX {
+    /* 沿橫向 x 軸上平鋪 */
+    background-repeat: repeat-x;
+    background-color: #98ffc1;
+}
+
+.alongY {
+    /* 沿縱向 y 軸上平鋪 */
+    background-repeat: repeat-y;
+    background-color: #98ecff;
+}
+
+/* ------------------------ 複合屬性 ------------------------*/
+
+/* 另外也可以同時設置多個背景屬性，可以使代碼更加地簡潔 */
+.diversityStyle {
+    text-align: center;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    /* 但是必須遵守以下格式，可以缺少屬性*/
+    /* background : transparent   url()     repeat   fixed    top*/
+    /* background :   背景顏色  背景圖片地址  背景平鋪  背景附著 圖片位置; */
+    background: rgb(243, 200, 243) no-repeat fixed top center;
+}
