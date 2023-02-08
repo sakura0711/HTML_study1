@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繼承龐大財產!</title>
+    <style>
+        /* 當父親的屬性可以被後代所使用時 CSS 會自動的分配給後代 */
+        div {
+            background-color: plum;
+            color: rgb(238, 76, 76);
+            font: 400 30px sans-serif;
+            line-height: 150px;
+            /* 但有些屬性也是不能繼承的 */
+            /* 例如 div 為 "區塊元素" span 為 "行內元素"，
+            當設置 div 的大小時 span 沒有該屬性 */
+            height: 150px;
+        }
+
+        span {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>我還是測試文字!!</span>
+    </div>
+</body>
+
+</html>
