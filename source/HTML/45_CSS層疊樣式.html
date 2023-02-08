@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翻開覆蓋的陷阱卡</title>
+    <style>
+        /* 當選擇器相同時就會發生 "層疊" 現象 */
+        div{
+            /* 被覆蓋掉了@w@ */
+            background-color: pink;
+        }
+        /* CSS 會遵守 "就近原則" ，離越近的樣式會把之前相同的屬性覆蓋掉 */
+        div{
+            background-color: rgb(160, 219, 221);
+            /* 不同的屬性則不會消失 */
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>我是測試文字~</div>
+</body>
+</html>
