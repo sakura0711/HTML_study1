@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css權重注意點，魔鬼藏在細節裡!</title>
+    <style>
+        * {
+            font-size: 25px;
+        }
+
+        /* 父亲的權重是 100 ( !important / id 選擇器 ) */
+        #father {
+            color: red !important;
+        }
+
+        /* 但 p 繼承的權重為 0 */
+        /* 當想看當前標籤得樣式時,就先看看這個標籤有沒有獨立被選出來 */
+        p {
+            color: pink;
+        }
+
+        body {
+            color: red;
+        }
+
+        /* a鏈接 瀏覽器默任制定了一個樣式 藍色的 有下划线  a {color: blue; text-decoration: underline}*/
+        a+.convert {
+            text-decoration: none;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="father">
+        <p>我左看右看，上看下看</p>
+    </div>
+    <a href="#">我已經被制定好了...</a>
+    <a href="#" class="convert">我脫離束縛了!!!...</a>
+</body>
+
+</html>
