@@ -22,12 +22,41 @@
         span {
             background-color: rgba(0, 0, 0, 0.3);
         }
+
+        p{
+            background-color: #57f3e6;
+        }
+        /* 另外在繼承行高屬性時有一點須注意 */
+        .parent {
+            /* 15px/1.5 (倍數) */
+            font: 400 20px/2 "Microsoft YaHei";
+            /* 目前行高 20px * 1.5 倍行高 = 30px*/
+        }
+
+        .children1 {
+            /* 在繼承行高倍數時，為依據當前子類的文字大小 (px) 來乘，而不是父類的文字大小 */
+            font-size: 25px;
+            /* 目前行高 25px * 1.5 倍行高 = 37.5px*/
+        }
+
+        .children2 {
+            font-size: 30px;
+            /* 目前行高 30px * 1.5 倍行高 = 45px*/
+        }
     </style>
 </head>
 
 <body>
     <div>
         <span>我還是測試文字!!</span>
+    </div>
+
+    <hr>
+
+    <div class="parent">
+        我還是測試文字!!
+        <p class="children1">我還是測試文字!!</p>
+        <p class="children2">我還是測試文字!!</p>
     </div>
 </body>
 
