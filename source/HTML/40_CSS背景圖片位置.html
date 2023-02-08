@@ -8,6 +8,8 @@
     <title>圖片排排站</title>
     <link rel="stylesheet" href="../CSS/40.css">
     <style>
+
+        /*--------------------------- 相對單位 ---------------------------*/
         /* 當方位名詞只有一個時，另外一個屬性會自動設定為 center */
         .top-left_relatively{ 
             /* 左上 */
@@ -46,6 +48,7 @@
             background-position: bottom right;
         }
         
+        /*--------------------------- 精確單位 ---------------------------*/
         /* 精確單位，透過 x y 值來控制，並且順序為 x y */
         .top-left_absolute{ 
             /* 左上 */
@@ -83,6 +86,13 @@
             /* 右下 */
             background-position: 115px 125px;
         }
+
+        /*--------------------------- 混合單位 ---------------------------*/
+        /* 相對位置和絕對位置可以一起使用 */
+        .bgp{
+            background-position: center 50px;
+        }
+
     </style>
 </head>
 
@@ -120,6 +130,11 @@
         <div class="block--image bottom-left_absolute one">左下</div>
         <div class="block--image bottom-center_absolute two">中下</div>
         <div class="block--image bottom-right_absolute one">右下</div>
+    </div>
+
+    <h2>背景圖片對齊方向 混合單位</h2>
+    <div>
+        <div class="block--image bgp one" style="width: 300px;">混合單位(x=center y=30px)</div>
     </div>
 
     
