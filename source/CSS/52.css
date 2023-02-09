@@ -1,0 +1,36 @@
+* {
+    font: 500 16px "Microsoft Yahei";
+    text-align: center;
+}
+
+td {
+    border: 2px plum solid;
+}
+
+table {
+    width: 700px;
+    height: 300px;
+    border: 2px plum solid;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h3 {
+    color: rgb(0, 132, 125);
+    font-size: 20px;
+}
+
+strong {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 58, 111);
+}
+
+.after {
+    /* 可以將重疊的邊框直接合併 */
+    /* collapse 為 "合併" 意思 */
+    border-collapse: collapse;
+}
