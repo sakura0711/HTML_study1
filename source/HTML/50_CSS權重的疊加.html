@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人多勢眾!</title>
+    <style>
+        /* 元素選擇器，權重 (0, 0, 0, 1) */
+        ul {
+            /* 權重 1  */
+            background-color: #fff;
+        }
+
+        /* 權重疊加， 0, 0, 0, 1 + 0, 0, 0, 1 = 0, 0, 0, 2 */
+        ul li {
+            /* 權重 2  */
+            background-color: pink;
+        }
+
+        /* 另外，權重只會疊加，不存在進位問題 */
+        /* 例如: ul li*9 會是 0, 0, 0, 10 */
+        /* !所以不會有覆蓋優先級的問題存在! */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是1號</li>
+        <li>我是2號</li>
+        <li>我是3號</li>
+    </ul>
+</body>
+
+</html>
