@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 盒子模型 - border</title>
+    <style>
+        * {
+            color: white;
+            text-align: center;
+            font: 600 25px "Microsoft Yahei";
+        }
+
+        td {
+            width: 150px;
+            height: 50px;
+            background-color: green;
+        }
+
+        .none {
+            /* border 有三種屬性可以設置  */
+
+            /* 1 . border-width 邊框粗細 ------- */
+            border-width: 10px;
+
+            /* 2. border-style 邊框樣式 -------- */
+            border-style: none;
+
+            /* 3. border-color 邊框顏色 -------- */
+            border-color: pink;
+        }
+
+        .hidden {
+            /* 另外也可以使用複合屬性來書寫 */
+            border: 10px hidden pink;
+        }
+
+        .dotted {
+            border: 10px dotted pink;
+        }
+
+        .dashed {
+            border: 10px dashed pink;
+        }
+
+        .solid {
+            border: 10px solid pink;
+        }
+
+        .double {
+            border: 10px double pink;
+        }
+
+        .groove {
+            border: 10px groove pink;
+        }
+
+        .ridge {
+            border: 10px ridge pink;
+        }
+
+        .inset {
+            border: 10px inset pink;
+        }
+
+        .outset {
+            border: 10px outset pink;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th style="color: #000;" colspan="5">不同樣式的邊框</th>
+        </tr>
+        <tr>
+            <!-- 無邊框 (默認)-->
+            <td class="none">none</td>
+
+            <!-- 隱藏邊框 -->
+            <td class="hidden">hidden</td>
+
+            <!-- 點線邊框 -->
+            <td class="dotted">dotted</td>
+
+            <!-- 虛線邊框 -->
+            <td class="dashed">dashed</td>
+
+            <!-- 實線邊框 (常用) -->
+            <td class="solid">solid</td>
+        </tr>
+        <tr>
+            <!-- 雙線邊框 -->
+            <td class="double">double</td>
+
+            <!-- 3D 特殊邊框 -->
+            <td class="groove">groove</td>
+            <td class="ridge">ridge</td>
+            <td class="inset">inset</td>
+            <td class="outset">outset</td>
+        </tr>
+    </table>
+</body>
+
+</html>
