@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>真相真的是這樣嗎?</title>
+    <style>
+        div {
+            /* 原本盒子的大小 */
+            width: 300px;
+            height: 300px;
+            background-color: #14f5d3;
+
+            /* 當我們在設置邊框大小時，是在基礎大小上向外拓展*/
+            border: 10px solid pink;
+
+            /* 也就是說，實際佔的大小是 
+             height = 300 + ( 10*2 ) = 320px 
+             width = 300 + ( 10*2 ) = 320px */
+
+        }
+
+        p {
+            font: 600 18px/2 "Microsoft Yahei";
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <!-- !重點 -->
+    <p>
+        div 實際佔的大小是<br>
+        height = 300(盒子大小) + ( 10*2 ) (邊框大小) = 320px <br>
+        width = 300(盒子大小) + ( 10*2 ) (邊框大小) = 320px <br>
+    </p>
+</body>
+
+</html>
