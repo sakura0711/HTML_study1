@@ -1,0 +1,20 @@
+
+td {
+    width: 100px;
+    height: 50px;
+    background-color: #ffbdbd;
+
+    text-align: center;
+    font : 600 30px "Helvetica Neue";
+}
+td:hover{
+    background-color: #fff;
+}
+.computer__head {
+    width: 500px;
+    height: 50px;
+    background-color: #f0aeff;
+}
+.operator{
+    background-color: rgb(48, 209, 158);
+}
