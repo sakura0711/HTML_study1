@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>人多勢眾!</title>
     <style>
+        * {
+            font: 600 17px/2 "Microsoft Yahei";
+        }
+
         /* 元素選擇器，權重 (0, 0, 0, 1) */
         ul {
             /* 權重 1  */
@@ -22,6 +26,25 @@
         /* 另外，權重只會疊加，不存在進位問題 */
         /* 例如: ul li*9 會是 0, 0, 0, 10 */
         /* !所以不會有覆蓋優先級的問題存在! */
+
+
+        /* 小練習 ---- 更改 css 樣式讓第一個 li 變成 粉綠色 */
+
+        .nav li {
+            /* 不能修改預定屬性 */
+            /* 小提示 : 目前屬性權重為 0, 0 , 1, 1 */
+            background-color: peru;
+        }
+
+
+        /* ANS ----> */
+        .nav .orange {
+            /* 只需將權重設定比預定屬性高即可 */
+            /* 目前權重 0, 0, 2, 0; */
+            background-color: orange;
+        }
+
+        /* ----------------------------------------------- */
     </style>
 </head>
 
@@ -31,6 +54,12 @@
         <li>我是2號</li>
         <li>我是3號</li>
     </ul>
+
+    <ol class="nav">
+        <li class="orange">我111</li>
+        <li>我是222</li>
+        <li>我是3333</li>
+    </ol>
 </body>
 
 </html>
