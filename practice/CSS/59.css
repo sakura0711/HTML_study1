@@ -16,16 +16,13 @@ span {
     display: inline-block;
 }
 
-ul,
-li {
-    list-style-type: none;
+.container {
     display: inline-block;
-    margin: 0 auto;
 }
 
 /* > 背景圖片 ------------------------------------------------ */
 
-.logo--bg{
+.logo--bg {
     margin: 0 auto;
     background-image: url(../assets/images/59/bg_title.png);
     background-repeat: no-repeat;
@@ -44,6 +41,13 @@ li {
     border-top: 5px solid rgb(255, 162, 0);
     color: #000;
     text-align: center;
+}
+
+.nav ul,
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .nav a,
@@ -78,22 +82,44 @@ input {
 
 .sidebar {
     display: inline-block;
-    margin-top: 10px;
     width: 250px;
     height: 360px;
     background-color: rgb(202, 202, 202);
 }
 
 .sidebar a {
+    margin: 0 0;
+    padding: 0 0;
     padding-left: 35px;
     display: block;
     color: #000000;
     font: 500 18px "Microsoft Yahei";
-
     height: 60px;
     line-height: 60px;
 }
+
 .sidebar a:hover {
     background-color: #82cdff;
     color: #ffffff;
+}
+
+/* > 商品縮圖 ------------------------------------------------- */
+
+.container ul,
+.container li {
+    display: inline-block;
+    padding: 0 0;
+}
+
+
+ul .commodity {
+    display: inline-block;
+    height: 360px;
+    width: 250px;
+    background-color: pink;
+}
+
+#test {
+    padding: 0 0;
+    margin: 0 0;
 }
