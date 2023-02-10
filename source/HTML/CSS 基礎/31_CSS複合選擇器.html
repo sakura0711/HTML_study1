@@ -9,11 +9,12 @@
     <style>
         /* 後代選擇器，使用空白隔開依序往下查找 */
         ul li {
-            /* 只選擇 div 下面 ul 下面的 li 更改樣式 */
+            /* 只選擇 ul 下面的 li 更改樣式 */
             color: tomato;
         }
 
         ul li a {
+            /* 只選擇 ul 下面的 li 下面的 a 更改樣式 */
             color: green;
         }
 
@@ -45,9 +46,9 @@
     <div class="nav">
         <p>我是兒子1號</p>
         <p>我是2號!</p>
-        <sapn>
+        <span>
             <p href="#">我不會改變顏色，因為我不是 class nav的親兒子..</p>
-        </sapn>
+        </span>
     </div>
 
     <hr>
