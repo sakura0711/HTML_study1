@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin 外外邊距</title>
+    <style>
+        /* 基礎語法與 margin 時一樣 */
+        div{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+        }
+        .one{
+            background-color: pink;
+        }
+        .two{
+            background-color: #00ff40;
+        }
+        .after{
+            margin-left: 50px;
+        }
+        .complex {
+            /* margin 也有複合寫法，不過稍微複雜。可以大致分為下列4種 */
+
+            /*----- 1. margin: 10px; 當只有一個值時，上下左右的外邊距為 10px */
+            margin: 10px;
+
+            /*----- 2. margin:20px 10px; 當有兩個值時，第一個為 "上下" 的外邊距，第二個為 "左右"的外邊距 */
+            margin: 20px 10px;
+
+            /*----- 3. margin : 15px 10px 5px; 當有三個值時，分別為 上 / 左右 / 下 設定外邊距 */
+            margin: 15px 10px 5px;
+
+            /* 4. margin: 5px 10px 20px 30px; 當有四個值時，為 "順時針" (上右下左) 設定外邊距 */
+            margin: 5px 10px 20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ? margin 可以控制 盒子與盒子 之間的距離 -->
+    <h1>沒有設定 margin 時</h1>
+    <div class="one"></div>
+    <div class="two"></div>
+
+    <hr>
+    <h1>設定 margin 後</h1>
+    <div class="one"></div>
+    <div class="two after"></div>
+</body>
+</html>
