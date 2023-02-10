@@ -1,0 +1,25 @@
+* {
+    font: 500 17px "Microsoft Yahei";
+}
+
+.nav a {
+    display: inline-block;
+    height: 50px;
+    padding: 0 1em;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    line-height: 50px;
+}
+
+.nav a:hover {
+    background-color: #b3b3b3b7;
+}
+
+.nav {
+    /* width: 90%; */
+    border: 1px solid rgb(199, 199, 199);
+    border-top: 5px solid orange;
+    text-align: center;
+    background-color: #f7f7f7;
+}
