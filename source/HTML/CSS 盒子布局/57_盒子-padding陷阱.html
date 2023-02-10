@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding 不會撐大盒子的情況</title>
+    <style>
+        /* 第一種情況 ----------------------------------------------------*/
+        h3 {
+            /* 當沒有寫 width/height 時，設定 padding 值不會增大原有的像素大小 */
+            height: 200px;
+            background-color: pink;
+            padding: 0 20px;
+        }
+
+        /* 第二種情況 ----------------------------------------------------*/
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: purple;
+        }
+
+        /* 當繼承父親屬性時，更改padding 大小不會增加原有的像素大小 */
+        div p {
+            padding: 0 20px;
+            background-color: skyblue;
+        }
+
+        .title>p {
+            color: yellowgreen;
+            font: 600 17px "Microsoft Yahei";
+        }
+    </style>
+</head>
+
+<body>
+    <span class="title">
+        <h1>第一種情況</h1>
+        <p>當沒有寫 width 時，設定 padding 值不會增大原有的盒子大小</p>
+    </span>
+
+    <h3></h3>
+
+    <hr>
+    <span class="title">
+        <h1>第二種情況</h1>
+        <p>當繼承父親屬性時，更改padding 大小不會增加原有的盒子大小</p>
+    </span>
+
+    <div>
+        <p>香菇?</p>
+    </div>
+</body>
+
+</html>
