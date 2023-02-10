@@ -1,0 +1,17 @@
+div>a{
+    display: block;
+    height: 50px;
+    width: 170px;
+    background-color: #7a7979;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+
+    /* text-align: center; */
+    /* 可以使用 padding 來控制內邊框大小了 */
+    padding-left: 30px;
+}
+/* 鼠標在上方 */
+a:hover{
+    background-color: rgb(255, 98, 0);
+}
