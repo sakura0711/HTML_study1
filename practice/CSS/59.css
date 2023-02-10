@@ -1,0 +1,86 @@
+/* > 通常設定 ----------------------------------------------- */
+body{
+    margin: 0 10%;
+}
+* {
+    font: 400 16px "Microsoft Yahei";
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+span {
+    display: inline-block;
+}
+
+ul,
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* > 導航欄位 ------------------------------------------------ */
+
+.nav {
+    margin: 0 auto;
+    height: 50px;
+    background-color: #fafafa;
+    border: 2px solid #efefef;
+    border-top: 5px solid rgb(255, 162, 0);
+    color: #000;
+    text-align: center;
+}
+
+.nav a,
+.nav span {
+    display: inline-block;
+    line-height: 50px;
+    color: #000000;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.nav a:hover {
+    background-color: #cecdcd;
+    color: #ffffff;
+}
+
+
+/* > 搜尋欄位 ------------------------------------------------- */
+
+.search-bar {
+
+}
+input {
+    width: 300px;
+}
+
+/* > 下載應用程式 ---------------------------------------------- */
+
+.download a {
+    background-color: pink;
+}
+
+
+/* > 側邊快捷欄位 ---------------------------------------------- */
+
+.sidebar {
+    width: 100px;
+    height: 180px;
+    padding: 0 20px;
+    background-color: pink;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    height: 30px;
+}
+
+.sidebar a:hover {
+    background-color: #82cdff;
+    color: #fff;
+}
