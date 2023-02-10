@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding 是盒子的內邊距喔</title>
+    <style>
+        * {
+            font: 600 20px "Microsoft YaHei";
+        }
+
+        div {
+            width: 400px;
+            height: 200px;
+        }
+
+        .before {
+            background-color: pink;
+            /* 內邊距為 0 (默認) */
+            padding: 0;
+        }
+
+        .after {
+            background-color: powderblue;
+            padding: 10px;
+
+            /* Tip: padding 也可以分開設定 */
+            /* padding-top, padding-bottom, padding-left, padding-right */
+        }
+
+        .complex {
+            /* padding 也有複合寫法，不過稍微複雜。可以大致分為下列4種 */
+
+            /*----- 1. padding: 10px; 當只有一個值時，上下左右的內邊距為 10px */
+            padding: 10px;
+
+            /*----- 2. padding:20px 10px; 當有兩個值時，第一個為 "上下"的邊距，第二個為 "左右"的邊距 */
+            padding: 20px 10px;
+
+            /*----- 3. padding : 15px 10px 5px; 當有三個值時，分別為 上 / 左右 / 下 設定邊距 */
+            padding: 15px 10px 5px;
+
+            /* 4. padding: 5px 10px 20px 30px; 當有四個值時，為 "順時針"(上右下左) 設定邊距 */
+            padding: 5px 10px 20px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="before">我是沒有設定內邊距的內容</div>
+    <div class="after">我是設定完內邊距的內容，
+        <br>另外，設定邊距也會影響到盒子的實際大小。
+    </div>
+</body>
+
+</html>
