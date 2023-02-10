@@ -1,7 +1,8 @@
 /* > 通常設定 ----------------------------------------------- */
-body{
-    margin: 0 10%;
+body {
+    margin: 0 5%;
 }
+
 * {
     font: 400 16px "Microsoft Yahei";
 }
@@ -20,6 +21,17 @@ li {
     list-style-type: none;
     display: inline-block;
     margin: 0 auto;
+}
+
+/* > 背景圖片 ------------------------------------------------ */
+
+.logo--bg{
+    margin: 0 auto;
+    background-image: url(../assets/images/59/bg_title.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 1000px;
+    height: 200px;
 }
 
 /* > 導航欄位 ------------------------------------------------ */
@@ -51,9 +63,6 @@ li {
 
 /* > 搜尋欄位 ------------------------------------------------- */
 
-.search-bar {
-
-}
 input {
     width: 300px;
 }
@@ -68,19 +77,23 @@ input {
 /* > 側邊快捷欄位 ---------------------------------------------- */
 
 .sidebar {
-    width: 100px;
-    height: 180px;
-    padding: 0 20px;
-    background-color: pink;
+    display: inline-block;
+    margin-top: 10px;
+    width: 250px;
+    height: 360px;
+    background-color: rgb(202, 202, 202);
 }
 
 .sidebar a {
+    padding-left: 35px;
     display: block;
-    color: #fff;
-    height: 30px;
-}
+    color: #000000;
+    font: 500 18px "Microsoft Yahei";
 
+    height: 60px;
+    line-height: 60px;
+}
 .sidebar a:hover {
     background-color: #82cdff;
-    color: #fff;
+    color: #ffffff;
 }
