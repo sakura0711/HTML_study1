@@ -1,6 +1,6 @@
 /* > 通常設定 ----------------------------------------------- */
 body {
-    margin: 0 5%;
+    margin: 0 100px;
 }
 
 * {
@@ -82,7 +82,7 @@ input {
 
 .sidebar {
     display: inline-block;
-    width: 250px;
+    width: 233px;
     height: 360px;
     background-color: rgb(202, 202, 202);
 
@@ -116,8 +116,13 @@ input {
 
 .container ul,
 .container li {
+    list-style-type: none;
     display: inline-block;
     padding: 0 0;
+}
+
+.container ul li .commodity--image {
+    padding: 0 auto;
 }
 
 
@@ -126,9 +131,33 @@ ul .commodity {
     height: 360px;
     width: 250px;
     background-color: pink;
+    padding: auto;
+    margin: 0 auto;
 }
 
-#test {
-    padding: 0 0;
-    margin: 0 0;
+.commodity--image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 360px;
+    width: 250px;
+}
+
+.com--image1 {
+    background-image: url(../assets/images/59/commodity/1.png);
+}
+
+.com--image2 {
+    background-image: url(../assets/images/59/commodity/2.png);
+}
+
+.com--image3 {
+    background-image: url(../assets/images/59/commodity/3.png);
+}
+
+.com--image4 {
+    background-image: url(../assets/images/59/commodity/4.png);
+}
+
+.com--image5 {
+    background-image: url(../assets/images/59/commodity/5.png);
 }
