@@ -85,6 +85,15 @@ input {
     width: 250px;
     height: 360px;
     background-color: rgb(202, 202, 202);
+
+    /* overflow 屬性可以在內容溢出容器大小時，選擇處理方法 */
+
+    /* 
+    1. overflow: hidden; 隱藏
+    2. overflow: visible; 顯示
+    */
+    overflow: hidden;
+
 }
 
 .sidebar a {
