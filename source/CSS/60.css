@@ -1,0 +1,49 @@
+.block {    
+    /* > 但是要實現水平居中的效果，必須先指定盒子的大小 */
+    width: 500px;
+    height: 100px;
+
+    display: block;
+    background-color: pink;
+
+    /* 水平居中效果 */
+    /* 通過設定 margin 屬性來實現 */
+    margin: 0 auto;
+    /* 第 2 個數值是設定左右的外邊距。
+        也就是說 左右兩邊的外邊距是相等的，盒子就會剛好在正中央 */
+}
+
+strong{
+    color: rgb(255, 94, 120);
+    font: 600 40px/2 "Microsoft Yahei";
+}
+/* ? 特殊情況 -------------------------------------------------------------*/
+
+.inline-parent {
+
+    /* > 但是要實現水平居中的效果，必須先指定盒子的大小 */
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: skyblue;
+
+    /* > 可以將 "行內元素" 的父級元素添加 text-align: center; 屬性，即可實現水平居中效果 */
+    text-align: center;
+}
+
+.inline {
+    /* ! 單獨將 "行內區塊元素" 設定 margin 是沒有效果的 
+       ! 必須依靠父親給的大小*/
+    /* margin : 0 auto; */
+    display: inline;
+
+}
+
+
+.inline-block {
+    /* ! 單獨將 "行內區塊元素" 設定 margin 是沒有效果的 
+       ! 必須依靠父親給的大小*/
+    /* margin : 0 auto; */
+    display: inline-block;
+    background-color: orange;
+}
