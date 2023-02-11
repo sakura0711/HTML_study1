@@ -1,0 +1,62 @@
+h3 {
+    font: 600 17px "Microsoft Yahei";
+    color: green;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+li {
+    display: inline-block;
+    margin: 0 100px;
+}
+
+.show {
+    list-style-type: none;
+}
+
+.parent {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+
+    /* ! 在很多情況下，我們想要單獨設定子元素的外邊距，但是，
+       ! 當同時給 父元素 和 子元素 同時設定 margin 值時，就會出現坍塌 
+       ! 盒子的 margin 值會依照最大的 margin 樣式設定 */
+    margin-top: 100px;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin-top: 30px;
+}
+
+/* ? 解決方法 -------------------------------------*/
+
+/* > 第一種 : 設定父級元素的 border 屬性 */
+.parent-one {
+    margin: 0 0;
+    /* 小技巧: 可以將框線設定為透明就不會有人發現拉! */
+    border: 1px solid transparent;
+}
+
+/* > 第二種 : 設定父級元素的 padding 屬性 */
+.parent-two {
+    padding-top: 1px;
+    margin: 0 0;
+}
+
+/* > 第三種 : 設定 overflow 屬性 */
+.parent-three {
+    margin: 0 0;
+    /* overflow 屬性可以在內容溢出容器大小時，選擇處理方法 */
+    overflow: hidden;
+    /* 
+    1. overflow: hidden; 隱藏
+    2. overflow: visible; 顯示
+    */
+}

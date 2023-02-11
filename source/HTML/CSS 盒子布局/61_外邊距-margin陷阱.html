@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陷阱 waaaaaaaa</title>
+    <link rel="stylesheet" href="../../CSS/61.css">
+</head>
+
+<body>
+    <!-- 當我們在使用嵌套盒子時一定會遇到的問題 -->
+    <!-- 外邊距的塌陷，當同時給父親盒子與子代盒子添加外邊距時發生 -->
+    <h1 class="title">外邊距的塌陷</h1>
+    <h3>在很多情況下，我們想要單獨設定子元素的外邊距。
+        外邊距的塌陷，當同時給父親盒子與子代盒子添加外邊距時發生<br>
+        當發生時，我們會發現。盒子的 margin 值是依照最大值的樣式設定
+    </h3>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    <hr>
+    <h1 class="title">解決方法</h1>
+    <ul class="show">
+        <li>
+            <h3>1. 設定父級元素的 border 屬性</h3>
+            <div class="parent parent-one">
+                <div class="child"></div>
+            </div>
+        </li>
+        <li>
+            <h3>2. 設定父級元素的 padding 屬性</h3>
+            <div class="parent parent-two">
+                <div class="child"></div>
+            </div>
+        </li>
+        <li>
+            <h3>3. 設定 overflow 屬性</h3>
+            <div class="parent parent-three">
+                <div class="child"></div>
+            </div>
+        </li>
+    </ul>
+
+</body>
+
+</html>
