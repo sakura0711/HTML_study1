@@ -1,0 +1,31 @@
+* {
+    font: 400 20px/2 "MIcrosoft Yahei";
+    margin-bottom: 50px;
+}
+h2{
+    color: green;
+}
+
+.before-normal {
+    text-shadow: 10px 10px;
+}
+
+.after-normal {
+    text-shadow: 30px 10px;
+}
+
+.before-blur {
+    text-shadow: 10px 10px 5px;
+}
+
+.after-blur {
+    text-shadow: 10px 10px 10px;
+}
+
+.before-color {
+    text-shadow: 10px 10px 10px;
+}
+
+.after-color {
+    text-shadow: 10px 10px 10px pink;
+}
