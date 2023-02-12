@@ -1,0 +1,59 @@
+div {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+h2{
+    font: 600 20px/2 "Microsoft Yahei";
+    color: green;
+}
+.before-normal {
+    /* 默認情況，h-shadow 和 v-shadow 是必填的選項 */
+    /* 可以控制陰影的方位 */
+    box-shadow: 10px 10px;
+}
+
+.after-normal {
+    /* 默認情況，h-shadow 和 v-shadow 是必填的選項 */
+    /* 可以控制陰影的方位 */
+    box-shadow: 30px 40px;
+}
+
+.before-blur {
+    /* 陰影模糊距離 */
+    box-shadow: 10px 10px 5px;
+}
+
+.after-blur {
+    /* 陰影模糊距離 */
+    box-shadow: 10px 10px 10px;
+
+}
+
+.before-spread {
+    /* 陰影尺寸 */
+    box-shadow: 10px 10px 5px 10px;
+}
+
+.after-spread {
+    /* 陰影尺寸 */
+    box-shadow: 10px 10px 5px 20px;
+}
+
+.before-color {
+    /* 陰影顏色 */
+    box-shadow: 10px 10px 5px 10px #000000;
+}
+
+.after-color {
+    /* 陰影顏色 */
+    box-shadow: 10px 10px 5px 10px #218c98;
+}
+
+.inset {
+    /* 默認情況下是 outset (外部陰影) */
+    box-shadow: 10px 10px 5px 10px #666 inset;
+}
