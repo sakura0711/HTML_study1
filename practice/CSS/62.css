@@ -1,0 +1,64 @@
+* {
+    font: 600 16px/2 "Microsoft Yahei";
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body {
+    background-color: #ababab;
+}
+
+.box {
+    /* 盒子大小 */
+    height: 450px;
+    width: 300px;
+
+    margin: 100px auto;
+    background-color: #fff;
+}
+
+.box img {
+    /*小技巧 : 如果不想讓盒子內的照片超出 div ，可以設定 width: 100%，
+     繼承父親的大小 */
+    width: 100%;
+}
+
+.review {
+    /* 上邊距 */
+    margin: 10px 0;
+    /* 為甚麼不用 margin 統一設定就好? 因為會發生 "外邊距塌陷" 問題 */
+    padding: 0 25px;
+    font: 400 13px/2 "Microsoft Yahei";
+}
+
+.appraise {
+    margin-top: 80px;
+    padding: 0 25px;
+
+    color: #ababab;
+    font: 300 10px "Microsoft Yahei";
+}
+
+.info {
+    margin: 10px 0;
+    padding: 0 25px;
+}
+
+.info .commodity-name {
+    display: inline-block;
+    font: 500 14px/2 "Microsoft Yahei";
+}
+
+.info em {
+    font-style: normal;
+    color: #ababab;
+    padding: 0 10px 0 30px;
+}
+
+.info .price {
+    display: inline-block;
+    height: 15px;
+    /* padding: 0 30px 0 5px; */
+    color: orange;
+    font: 600 16px/2 "Microsoft Yahei";
+}
