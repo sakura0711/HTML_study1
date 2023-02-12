@@ -1,0 +1,42 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.box {
+    margin: 0 auto;
+    width: 300px;
+    height: 220px;
+
+    border: #ababab solid 2px;
+}
+
+h3 {
+    padding-left: 20px;
+    font: 500 20px/2 "Microsoft Yahei";
+    border-bottom: 1px dotted #ababab;
+}
+
+.info {
+    /* margin: auto; */
+    /* padding: auto; */
+    /* margin-left: 25px; */
+    padding: 10px 0 0 25px;
+
+}
+
+.info li {
+    list-style: none;
+}
+
+.info a {
+    font-style: normal;
+    color: #8d8d8d;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.info a:hover {
+    font-weight: bold;
+    color: teal
+}
