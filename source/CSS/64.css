@@ -1,0 +1,47 @@
+h2 {
+    font: 600 23px/2 "Microsoft Yahei";
+}
+
+p {
+    font: 600 15px/2 "Microsoft Yahei";
+    color: rgb(7, 157, 7);
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+
+    /* 圓角的設定，可以透過更改 border-radius 設定 */
+    /* > 要設定成圓形可以讓數值等於 width or height / 2 ; 
+       > 也可以使用 50% (就是當前父親元素大小的一半) */
+    border-radius: 50%;
+}
+
+.rectangle {
+    width: 300px;
+    height: 200px;
+    background-color: #76ffff;
+
+    /* 要設定矩形圓角可以使用原本盒子大小 "高度 (height)" / 2 設定 */
+    border-radius: 100px;
+}
+
+.different {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+
+    /* 要定義不同方向的圓角數值可以使用下列 2 種方法 */
+
+    /* > 1. 分別使用不同的方向設定 -------------------------*/
+    /* (左上) border-top-left-radius: 10px; */
+    /* (右上) border-top-right-radius: 10px; */
+    /* (右下) border-bottom-right-radius: 10px; */
+    /* (左下) border-bottom-left-radius: 10px; */
+
+    /* > 2. 複合寫法 (推薦) ------------------------------- */
+    /* ? 分別為 左上 右上 右下 左上 */
+    border-radius: 10px 20px 30px 40px;
+
+}
