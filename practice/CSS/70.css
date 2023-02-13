@@ -1,0 +1,54 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body {
+    margin: 50px 5%;
+}
+
+.box {
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+    background-color: pink;
+}
+
+.sidebar {
+    width: 300px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.commodity--info {
+    width: 900px;
+    height: 500px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.304);
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    width: 300px;
+    height: 50px;
+}
+
+ul li a {
+    display: inline-block;
+    width: 265px;
+    height: 50px;
+
+    padding-left: 35px;
+    color: #fff;
+    font: 400 16px/2 "Microsoft Yahei";
+    text-decoration: none;
+
+    line-height: 50px;
+}
+
+ul li a:hover {
+    background-color: rgb(255, 157, 96);
+}
