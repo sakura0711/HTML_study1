@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>運用不好是陷阱，運用的好是效果</title>
+    <link rel="stylesheet" href="../../CSS/68.css">
+</head>
+<body>
+    <h1>當屬性設定為浮動時，浮動盒子已經跟標準流的盒子再不同的位置上了</h1>
+
+    <div class="normal">
+        <h3>正常情況下:</h3>    
+        <div class="box--normal"></div>
+        <div class="box--normal pink"></div>
+    </div>
+
+
+    <div class="float">
+        <h3>設定為浮動屬性後:</h3>
+        <p>浮動的盒子因為與標準流的盒子不在同一個 z 軸上(深度比較淺) 所以會覆蓋在上面</p>        
+        <div class="box--float pink"></div>
+        <div class="box--normal"></div>
+
+    </div>
+</body>
+</html>

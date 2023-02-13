@@ -1,0 +1,18 @@
+h2{
+    font: 500 20px/2   "Microsoft Yahei";
+}
+.box--normal{
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+}
+
+.pink{
+    background-color: plum;
+}
+
+.box--float{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
