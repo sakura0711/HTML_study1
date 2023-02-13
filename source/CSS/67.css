@@ -1,0 +1,23 @@
+*{
+    font: 500 20px/2 "Microsoft Yahei";
+    color: green;
+}
+.box {
+    background-color: pink;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+.left, .right{
+    background-color: pink;
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.two{
+    background-color: skyblue;
+}
+
+.right{
+    float: right;
+}
