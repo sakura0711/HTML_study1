@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    margin: 20px auto 0px;
+
+    width: 1220px;
+    height: 610px;
+
+    background-color: pink;
+}
+
+.left {
+    width: 220px;
+    height: 610px;
+    float: left;
+
+    background-color: purple;
+}
+
+.right {
+    width: 1000px;
+    height: 510px;
+    float: left;
+}
+
+ul {
+    list-style: none;
+}
+
+.right ul li {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+    width: 240px;
+    height: 300px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
