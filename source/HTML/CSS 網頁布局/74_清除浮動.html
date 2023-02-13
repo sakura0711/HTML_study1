@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮動</title>
+    <link rel="stylesheet" href="../../CSS/74.css">
+</head>
+
+<body>
+    <h1>浮動對布局所帶來的影響</h1>
+    <p>當盒子為浮動時，無法將父親盒子大小撐開(脫標)，導致後面的元素往前推移</p>
+
+    <div class="parent">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+    </div>
+
+    <div class="parent2"></div>
+
+    <h1>解決方法</h1>
+    <p>清除浮動(去除浮動對盒子的影響，如果父盒子有高度屬性就可以省略)</p>
+    <div class="space"></div>
+
+    <!-- ? 總共有 4 種方法 -->
+
+    <p>第一種 : 隔牆法(額外標籤法) --------------------------------</p>
+
+    <div class="parent">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+        <!-- 在最後一個浮動的子元素後面多添加一個 區塊元素/div ，並且添加屬性 clear: both  -->
+        <div class="clear"></div>
+    </div>
+
+    <div class="parent2"></div>
+
+    <!------------------------------------------------------------------>
+
+    <div class="space"></div>
+
+    <p>第二種 : 給父元素添加 overflow : hidden 屬性 -----------------</p>
+
+    <div class="parent overflow">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+    </div>
+
+    <div class="parent2"></div>
+
+    <!------------------------------------------------------------------>
+
+    <div class="space"></div>
+
+    <p>第三種 : 給父級元素添加 :after 偽元素(原理相當於 "額外標籤法") ---</p>
+
+    <div class="parent clearfix">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+    </div>
+
+    <div class="parent2"></div>
+
+    <!------------------------------------------------------------------>
+
+    <div class="space"></div>
+    
+    <p>第四種 : 給父級元素添加 :before 和 :after 雙偽元素(原理相當於 "額外標籤法") ---</p>
+
+    <div class="parent clearfix-double">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+    </div>
+
+    <div class="parent2"></div>
+
+    <!------------------------------------------------------------------>
+
+</body>
+
+</html>
