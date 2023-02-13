@@ -1,0 +1,52 @@
+*{
+    font: 500 30px/2 "Microsoft Yahei";
+    margin: 0 0;
+    padding: 0 0;
+    text-align: center;
+}
+body{
+    margin: 20px 20px;
+}
+h1{
+    margin: 10px;
+}
+h2{
+    margin: 5px;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div {
+    background-color: pink;
+    width: 200px;
+    height: 100px;
+
+    float: left;
+}
+
+span {
+    background-color: plum;
+    width: 200px;
+    height: 100px;
+
+    float: left;
+}
+
+p {
+    background-color: skyblue;
+    width: 200px;
+    height: 100px;
+
+    float: left;
+}
+
+a{
+    background-color: greenyellow;
+    text-decoration: none;
+    color: #000;
+    width: 200px;
+    height: 100px;
+
+    float: left;
+}
