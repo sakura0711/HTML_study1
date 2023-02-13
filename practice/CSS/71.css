@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    margin: 50px auto;
+
+    width: 1230px;
+    height: 400px;
+    background-color: pink;
+}
+
+ul {
+    list-style: none;
+}
+
+.box li {
+    float: left;
+
+    width: 300px;
+    height: 400px;
+    background-color: rgba(10, 10, 0, 0.4);
+
+    margin-right: 10px;
+}
+
+.box li:hover{
+    background-color: #fff;
+
+    box-shadow: 10px 10px 10px 5px #666;
+}
+
+.box .last{
+    margin-right: 0;
+}
