@@ -83,47 +83,33 @@ li {
 
 
 /* > <!-- 網頁課程搜索欄 ------------------------------------------------> */
+/* search搜索模块 */
 .search {
     float: left;
-
-    height: 40px;
-    width: 402px;
-
-    text-align: center;
-
-    color: #666;
-    align-items: center;
-
-    margin-left: 50px;
-
-
+    width: 412px;
+    height: 42px;
+    margin-left: 70px;
 }
 
-.search-text {
+.search input {
     float: left;
-
-    height: 36px;
-    width: 330px;
-    line-height: 40px;
-    border: 2px solid rgb(52, 197, 255);
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
     border-right: 0;
-
-    padding-left: 20px;
-    color: #888;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
 }
 
-.search-btn {
+.search button {
     float: left;
     width: 50px;
-    height: 40px;
-
-    background-image: url(images/btn.png);
-    background-position: center right;
-    background-repeat: no-repeat;
+    height: 42px;
 
     border: 0;
+    background: url(images/btn.png);
 }
-
 
 
 /* > <!-- 會員帳號資訊欄 --> */
@@ -148,6 +134,7 @@ li {
     margin-left: 10px;
 
 }
+
 /* 清除浮動 */
 .clearfix:before,
 .clearfix:after {
