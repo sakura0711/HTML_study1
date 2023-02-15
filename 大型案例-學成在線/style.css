@@ -50,7 +50,7 @@ li {
     float: left;
     height: 45px;
 
-    margin: 0 40px;
+    margin-left: 40px;
 
     /* background-color: pink; */
 
@@ -79,6 +79,49 @@ li {
     color: rgb(52, 197, 255);
 }
 
+
+
+/* > <!-- 網頁課程搜索欄 ------------------------------------------------> */
+.search {
+    float: left;
+
+    height: 40px;
+    width: 402px;
+
+    text-align: center;
+
+    color: #666;
+    align-items: center;
+
+    margin-left: 50px;
+
+
+}
+
+.search-text {
+    float: left;
+
+    height: 36px;
+    width: 330px;
+    line-height: 40px;
+    border: 2px solid rgb(52, 197, 255);
+    border-right: 0;
+
+    padding-left: 20px;
+    color: #888;
+}
+
+.search-btn {
+    float: left;
+    width: 50px;
+    height: 40px;
+
+    background-image: url(images/btn.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+
+    border: 0;
+}
 
 
 
