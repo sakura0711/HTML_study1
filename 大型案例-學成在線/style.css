@@ -1,6 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
     list-style: none;
 }
 
@@ -34,6 +42,41 @@
     /* background-color: pink; */
 
     /* margin-right: 10px; */
+}
+
+/* > 頭部導航欄位 ----------------------------------------------------*/
+
+.nav {
+    float: left;
+    height: 45px;
+
+    margin: 0 40px;
+
+    /* background-color: pink; */
+
+    text-align: center;
+
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline;
+
+    text-align: center;
+
+    padding: 10px 10px;
+    margin: 10px;
+
+    font: 540 16px "Microsoft YaHei";
+    line-height: 45px;
+}
+
+.nav a:hover {
+    border-bottom: 4px solid rgb(52, 197, 255);
+    color: rgb(52, 197, 255);
 }
 
 
