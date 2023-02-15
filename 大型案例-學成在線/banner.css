@@ -1,0 +1,50 @@
+.banner{
+    height: 450px;
+
+    background-color: blue;
+}
+
+.banner .write{
+    width: 1200px;
+    height: 450px;
+
+    background-color: pink;
+}
+
+.banner .sub-nav ul {
+
+    float: left;
+
+    height: 450px;
+    width: 200px;
+}
+.banner .sub-nav ul li{
+
+    float: left;
+
+    height: 50px;
+    width: 200px;
+
+    /* 防止 a 連結 padding 溢出 */
+    overflow: hidden;
+    
+    background-color: #777;
+}
+.banner .sub-nav li a{
+    display: inline-block;
+
+    height: 50px;
+    width: 200px;
+
+    padding-left: 20px;
+
+    font: 500 16px "Microsoft YaHei";
+    line-height: 50px;
+
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.banner .sub-nav a:hover{
+    background-color: rgb(181, 101, 255);
+}
