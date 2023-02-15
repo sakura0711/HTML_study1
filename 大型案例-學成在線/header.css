@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.write {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    height: 45px;
+
+    margin: 30px auto;
+
+    /* background-color: #666; */
+
+    /* border: 4px solid green; */
+
+    align-items: center;
+}
+
+.logo {
+
+    float: left;
+
+    width: 195px;
+    height: 45px;
+
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-color: pink; */
+
+    /* margin-right: 10px; */
+}
+
+/* > 頭部導航欄位 ----------------------------------------------------*/
+
+.nav {
+    float: left;
+    height: 45px;
+
+    margin-left: 40px;
+
+    /* background-color: pink; */
+
+    text-align: center;
+
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline;
+
+    text-align: center;
+
+    padding: 10px 10px;
+    margin: 10px;
+
+    font: 540 16px "Microsoft YaHei";
+    line-height: 45px;
+}
+
+.nav a:hover {
+    border-bottom: 4px solid rgb(52, 197, 255);
+    color: rgb(52, 197, 255);
+}
+
+
+
+/* > <!-- 網頁課程搜索欄 ------------------------------------------------> */
+/* search搜索模块 */
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+
+    border: 0;
+    background: url(images/btn.png);
+}
+
+
+/* > <!-- 會員帳號資訊欄 --> */
+.user {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+
+    margin-left: 30px;
+}
+
+.user-btn {
+    float: left;
+    height: 40px;
+    width: 40px;
+    border: 2px solid pink;
+    border-radius: 50%;
+}
+
+.user p {
+    float: right;
+    margin-left: 10px;
+
+}
+
+/* 清除浮動 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
