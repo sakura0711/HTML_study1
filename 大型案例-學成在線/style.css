@@ -1,4 +1,51 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
+}
+
+.write {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    height: 45px;
+
+    margin: 30px auto;
+
+    /* background-color: #666; */
+
+    /* border: 4px solid green; */
+
+    align-items: center;
+}
+
+.logo {
+
+    float: left;
+
+    width: 195px;
+    height: 45px;
+
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-color: pink; */
+
+    /* margin-right: 10px; */
+}
+
+
+
+
+/* 清除浮動 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
