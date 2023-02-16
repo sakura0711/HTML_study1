@@ -23,3 +23,8 @@
 * JavaScript
   - ❌完全還沒...
 <br>
+
+---
+
+* 完成案例 : 
+  - [學成在線靜態網頁](https://github.com/sakura0711/HTML_study1/tree/main/%E5%A4%A7%E5%9E%8B%E6%A1%88%E4%BE%8B-%E5%AD%B8%E6%88%90%E5%9C%A8%E7%B7%9A)
