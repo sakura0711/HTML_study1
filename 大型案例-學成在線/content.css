@@ -33,8 +33,12 @@
     margin-right: 10px;
     margin-bottom: 10px;
     background-color: #fff;
+
+    /* 鼠標的形狀 */
+    cursor: pointer;
 }
-.content-bd li:hover{
+
+.content-bd li:hover {
     box-shadow: 0 11px 10px 5px rgb(144, 144, 144);
 }
 
