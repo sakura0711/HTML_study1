@@ -13,6 +13,8 @@
 }
 
 
+/* > 側邊欄 start ----------------------------------------------*/
+
 .banner .sub-nav ul {
 
     float: left;
@@ -50,4 +52,66 @@
 
 .banner .sub-nav a:hover {
     background-color: rgb(181, 101, 255);
+}
+
+/* 側邊欄 end ------------------------------------------------ */
+
+
+/* > 課程提醒列表 start ------------------------------------------- */
+
+.course {
+    float: right;
+
+    width: 250px;
+
+    margin: 50px auto;
+
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+.course h3 {
+    height: 50px;
+
+    line-height: 50px;
+    text-align: center;
+
+    color: #fff;
+    background-color: skyblue;
+}
+
+
+.class-list h4 {
+    color: #000;
+    font-size: 17px;
+
+    /* 加大字間距 */
+    letter-spacing: 1px;
+}
+
+.class-list p {
+    color: #afafaf;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.class-list ul {
+    padding: 0 20px;
+}
+
+.class-list ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.course .class-btn {
+    width: 210px;
+    height: 40px;
+
+    margin: 5px 10px;
+    margin-left: 20px;
+    border: rgb(96, 173, 255) solid 1px;
+    background-color: transparent;
+    font: 600 16px/2 "Microsoft YaHei";
+    color: rgba(96, 173, 255);
 }
