@@ -1,15 +1,17 @@
-.banner{
+.banner {
     height: 450px;
 
-    background-color: blue;
+    background-color: rgba(30, 5, 109);
 }
 
-.banner .write{
+.banner .write {
     width: 1200px;
     height: 450px;
 
-    background-color: pink;
+    background-color: rgb(222, 0, 37);
+    background-image: url(images/banner2_20190819_210028.png);
 }
+
 
 .banner .sub-nav ul {
 
@@ -18,7 +20,8 @@
     height: 450px;
     width: 200px;
 }
-.banner .sub-nav ul li{
+
+.banner .sub-nav ul li {
 
     float: left;
 
@@ -27,10 +30,10 @@
 
     /* 防止 a 連結 padding 溢出 */
     overflow: hidden;
-    
-    background-color: #777;
+
 }
-.banner .sub-nav li a{
+
+.banner .sub-nav li a {
     display: inline-block;
 
     height: 50px;
@@ -42,9 +45,9 @@
     line-height: 50px;
 
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.banner .sub-nav a:hover{
+.banner .sub-nav a:hover {
     background-color: rgb(181, 101, 255);
 }
