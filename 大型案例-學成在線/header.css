@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
 }
 
 a {
@@ -31,18 +30,12 @@ li {
 }
 
 .logo {
-
     float: left;
 
     width: 195px;
     height: 45px;
 
-    background-image: url(images/logo.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* background-color: pink; */
-
-    /* margin-right: 10px; */
+    background: url(images/logo.png) no-repeat center center;
 }
 
 /* > 頭部導航欄位 ----------------------------------------------------*/
@@ -53,10 +46,7 @@ li {
 
     margin-left: 40px;
 
-    /* background-color: pink; */
-
     text-align: center;
-
 }
 
 .nav li {
@@ -132,7 +122,6 @@ li {
 .user p {
     float: right;
     margin-left: 10px;
-
 }
 
 /* 清除浮動 */
