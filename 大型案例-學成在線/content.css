@@ -1,0 +1,62 @@
+.content {
+    margin-top: 30px;
+}
+
+.content-hd {
+    height: 45px;
+}
+
+.content-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.content-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+/* 把 li 的父親 ul 修改成大於 5 個盒子大小，第 5 個盒子就不會被擠出去了 :) */
+.content-bd ul {
+    width: 1225px;
+}
+
+.content-bd li {
+    float: left;
+    width: 231px;
+    height: 272px;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.content-bd li:hover{
+    box-shadow: 0 11px 10px 5px rgb(144, 144, 144);
+}
+
+.content-bd img {
+    /* 將圖片設定 100% 可以避免跑出父盒子之外 */
+    width: 100%;
+}
+
+.content-bd h4,
+.content-bd p {
+    margin: 20px 18px;
+    font-size: 16px;
+}
+
+.content-bd p {
+    margin: 0 18px;
+    font-size: 14px;
+    color: #777;
+}
+
+.content-bd em {
+    color: orange;
+    font-weight: 700;
+    font-style: normal;
+}
