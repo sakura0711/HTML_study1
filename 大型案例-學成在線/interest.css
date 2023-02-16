@@ -1,0 +1,47 @@
+.interest-recom {
+    font: 600 14px "Microsoft YaHei";
+    background-color: #fff;
+    box-shadow: 0 11px 10px 3px rgb(209, 209, 209);
+    border-radius: 5px;
+}
+
+.interest-recom {
+    height: 62px;
+}
+
+
+.interest-recom h3 {
+    float: left;
+    margin-left: 20px;
+    line-height: 62px;
+    color: skyblue;
+    font-size: 16px;
+}
+
+.interest-recom--list {
+    float: left;
+}
+
+.interest-recom--list ul {
+    float: left;
+
+    margin: 25px;
+}
+
+.interest-recom--list ul li {
+    float: left;
+
+    line-height: 15px;
+    padding: 0 20px;
+    border-right: 1px solid #c9c9c9;
+    font-size: 15px;
+    text-align: center;
+}
+
+.interest-recom--btn a {
+    float: right;
+    line-height: 62px;
+
+    margin-right: 20px;
+    color: skyblue;
+}
