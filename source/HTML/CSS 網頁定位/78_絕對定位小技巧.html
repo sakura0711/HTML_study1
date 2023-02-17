@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>絕對定位盒子居中對齊</title>
+    <style>
+        .box {
+            position: absolute;
+            /* 當設定絕對定位時，沒有辦法靠 margin: auto 實現 居中效果 */
+
+            /* > 水平居中 ------------------------------*/
+
+            /* 第一步 將 left 設成 50% (父盒子的寬度) */
+            left: 50%;
+            /* 第二步 把 margin-left 值設定成 負值(自己/2)  */
+            margin-left: -100px;
+
+            /* 垂直居中 --------------------------------*/
+
+            /* 第一步 將 top 值 設成 50% (父盒子的寬度) */
+            top: 50%;
+            /* 第二步 把 margin-top 值設定成 負值(自己/2) */
+            margin-top: -100px;
+
+            width: 200px;
+            height: 200px;
+
+            background-color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
