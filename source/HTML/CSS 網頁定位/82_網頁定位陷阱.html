@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陷阱~~~</title>
+    <style>
+        h2 {
+            font: 700 25px/2 "MIcrosoft YaHei";
+        }
+
+        h5 {
+            font: 600 18px/2 "Microsoft YaHei";
+            color: green;
+        }
+
+        .float{
+            float: left;
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .position{
+            position: absolute;
+            left: 30px;
+
+            width: 300px;
+            height: 100px;
+            background-color: rgba(85, 116, 252, 0.91);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>浮動與定位對於文字的影響</h2>
+
+    <h5>使用浮動時 盒子是不會壓住文字的</h5>
+    <div class="float"></div>
+    <p>我是一串文字........................................</p>
+    <br><br><br>
+
+    <h5>使用定位時，盒子會遮蓋住下方文字的內容</h5>
+    <div class="position"></div>
+    <p>我是一串文字........................................</p>
+
+</body>
+
+</html>
