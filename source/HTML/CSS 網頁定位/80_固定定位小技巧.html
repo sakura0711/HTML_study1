@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位在版心旁邊小技巧</title>
+    <style>
+        *{
+            font: 600 25px "Microsoft YaHei";
+            text-align: center;
+            line-height: 1.5;
+        }
+        .write {
+            width: 1200px;
+            height: 3000px;
+
+            margin: 100px auto;
+
+            background-color: plum;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 200px;
+            /* 第一步 ， 設定為瀏覽器大小 50% */
+            left: 50%;
+            /* 第二步 ，加上版心(write) / 2 的 margin 值時會剛好貼齊*/
+            /* 可以依據個人喜好做調整 */
+            margin-left: 605px;
+
+            width: 100px;
+            height: 100px;
+
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed">固定定位div</div>
+    <div class="write">版心</div>
+</body>
+
+</html>
