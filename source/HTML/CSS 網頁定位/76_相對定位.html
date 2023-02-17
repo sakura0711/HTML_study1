@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相對定位</title>
+    <style>
+        h2 {
+            font: 500 25px/2 "Microsoft YaHei";
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            color: green;
+        }
+
+        .parent-box {
+            width: 300px;
+            height: 300px;
+
+            border: 2px solid black;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            /* 相對定位是以盒子原本的座標(左上為 0 , 0) 來偏移位置 */
+            position: relative;
+
+            /* 距離上方 50px */
+            top: 50px;
+            /* 距離左邊 30px */
+            left: 30px;
+
+            text-align: center;
+            background-color: pink;
+        }
+
+        .box2 {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>相對定位是以盒子原本的座標(左上為 0 , 0) 來偏移位置</h2>
+    <p>並且，原本盒子的位置依然存在(不會脫標)</p>
+
+    <div class="parent-box">
+        <div class="child box1">偏移 <br> top 50 left 30</div>
+        <div class="child box2"></div>
+    </div>
+</body>
+
+</html>
