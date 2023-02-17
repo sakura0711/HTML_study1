@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>絕對定位</title>
+    <style>
+        h2 {
+            font: 500 25px/2 "Microsoft YaHei";
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            color: green;
+        }
+        em{
+            font: 700 20px/2 "Microsoft YaHei";
+            color: rgb(137, 6, 6);
+        }
+        .parent-box {
+            position: relative;
+            left: 10px;
+
+            width: 300px;
+            height: 300px;
+
+            border: 2px solid black;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+
+            background-color: pink;
+        }
+
+        .box2 {
+            position: absolute;
+            bottom: 30px;
+            left: 40px;
+
+            background-color: skyblue;
+        }
+
+        .box3 {
+            position: absolute;
+            left: 700px;
+            top: 80px;
+
+            background-color: plum;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>絕對定位，通常跟相對定位一起使用</h2>
+    <p>當絕對定位的<em>父盒子沒有定位</em>或<em>沒有父親元素時</em>，子盒子會根據當前瀏覽器做定位</p>>
+
+    <div class="child box3"></div>
+
+
+    <p>當絕對定位的<em>父盒子有定位時</em>，絕對定位會依照 <em>最近有定位屬性的父盒子</em>做依據<br>
+        並且，具有浮動的屬性(會脫標，不佔有原本位置大小)。
+    </p>
+    <div class="parent-box">
+        <div class="child box1"></div>
+        <div class="child box2"></div>
+    </div>
+</body>
+
+</html>
