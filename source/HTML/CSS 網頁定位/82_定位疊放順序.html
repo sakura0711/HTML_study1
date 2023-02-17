@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位疊放深度</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+
+
+            /* 默認情況下是 auto ，並且 z-index 沒有單位*/
+            z-index: auto;
+
+            text-indent: 10px;
+            font: 700 20px/2 "MIcrosoft YaHei";
+            line-height: 370px;
+
+        }
+
+        .parent {
+            float: left;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            
+
+        }
+
+        .one {
+            position: absolute;
+
+            background-color: pink;
+        }
+
+        .two {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+            background-color: skyblue;
+        }
+
+        .three {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+
+            background-color: greenyellow;
+        }
+
+        .z1 {
+            z-index: 1;
+        }
+
+        .z2 {
+            z-index: 2;
+        }
+
+        .z3 {
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>盒子的定位深度由 z-index 決定 (數值越大，越前面)。當一樣時，依照書寫的順序疊放</h1>
+
+    <div class="parent">
+        <div class="box one"></div>
+        <div class="box three"></div>
+        <div class="box two"></div>
+    </div>
+    <div class="parent">
+        <div class="box one z3">z3</div>
+        <div class="box two z2">z2</div>
+        <div class="box three z1">z1</div>
+    </div>
+
+    <div class="parent">
+        <div class="box one z1">z1</div>
+        <div class="box two z2">z2</div>
+        <div class="box three z3">z3</div>
+    </div>
+    <div class="parent">
+        <div class="box one z2">z2</div>
+        <div class="box two z3">z3</div>
+        <div class="box three z1">z1</div>
+    </div>
+    <div class="parent">
+        <div class="box one z2">z2</div>
+        <div class="box two z1">z1</div>
+        <div class="box three z2">z2</div>
+    </div>
+    <div class="parent">
+        <div class="box one z3">z3</div>
+        <div class="box two z1">z1</div>
+        <div class="box three z2">z2</div>
+    </div>
+
+</body>
+
+</html>
