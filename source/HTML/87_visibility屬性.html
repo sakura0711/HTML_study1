@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我消失了，但是我的痕跡沒有消失</title>
+
+    <style>
+        .parent {
+            position: relative;
+            top: 10px;
+            left: 10px;
+
+            width: 200px;
+            height: 200px;
+
+            border: 1px solid #000;
+        }
+
+        .box1 {
+            /* visibility: visible; 為顯示元素*/
+            visibility: visible;
+
+            width: 200px;
+            height: 150px;
+
+            background-color: plum;
+        }
+
+        .box1:hover {
+            /* visibility: none 是隱藏元素 */
+            /* ! 元素隱藏後會保留原本的位置 */
+            visibility: hidden;
+        }
+
+        strong {
+            font: 600 20px/2 "Microsoft YaHei";
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>使用 visibility 屬性時，當元素隱藏後，元素的位置<strong>會保留</strong></h1>
+
+    <div class="parent">
+        <div class="box1"></div>
+        <p>碰我啊(紫色區塊)，
+            <br>我會消失歐
+        </p>
+    </div>
+</body>
+
+</html>
