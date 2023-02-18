@@ -34,16 +34,16 @@
             display: none;
 
         }
-
-        .parent p{
-            position:  absolute;
-            bottom: 10px;
-            left: 10px;
+        strong{
+            font: 600 20px/2 "Microsoft YaHei";
+            color: green;
         }
     </style>
 </head>
 
 <body>
+    <h1>使用 display 屬性時，當元素隱藏後，元素的位置<strong>會消失</strong>(後面的元素往前推)</h1>
+    
     <div class="parent">
         <div class="box1"></div>
         <p>碰我啊(粉色區塊)，
