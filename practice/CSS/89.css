@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    position: relative;
+
+    width: 520px;
+    height: 280px;
+    margin: 100px auto;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 520px;
+    height: 280px;
+    background: rgba(0, 0, 0, 0.3) url(../assets/images/89/arr.png) no-repeat center;
+}
+
+/* 因為，.mask 在前面已經是 none 所以我們沒有辦法觸碰到他 */
+/* 所以正確寫法應該是 觸碰到下面的父盒子時，將 .mask 的 display 設為  block */
+.box:hover .mask {
+    display: block;
+}
