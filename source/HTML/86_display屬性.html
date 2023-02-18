@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我顯示了!~我又消失了~</title>
+    <style>
+        .parent {
+            position: relative;
+            top: 10px;
+            left: 10px;
+
+            width: 200px;
+            height: 200px;
+
+            border: 1px solid #000;
+        }
+
+        .box1 {
+            /* display : block 是 元素顯示(也可以是 轉換為區塊元素) */
+            display: block;
+
+            width: 200px;
+            height: 150px;
+
+            background-color: pink;
+        }
+
+        .box1:hover {
+            /* display: none 是隱藏元素 */
+            /* 元素隱藏後不會保留原本的位置 */
+            display: none;
+
+        }
+
+        .parent p{
+            position:  absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1"></div>
+        <p>碰我啊(粉色區塊)，
+            <br>我會消失歐</p>
+    </div>
+</body>
+
+</html>
