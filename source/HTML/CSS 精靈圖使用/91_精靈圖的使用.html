@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精靈圖 (sprites)</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        .origin {
+            width: 185px;
+            height: 134px;
+
+            margin: 10px;
+            border: 1px solid #888;
+            background: url(../../assets/images/91/sprites.png) no-repeat center center;
+        }
+
+        .picture1 {
+            width: 20px;
+            height: 20px;
+            margin: 100px;
+            margin: 20px;
+
+            border: 1px solid #999;
+            /* 精靈圖的原理使利用 background-position 去調到剛好顯示那一張圖片 */
+            /* ! 注意，圖片移動的方向基本上為 "負" ，因為網頁 x 往右是正， y 往下是正 */
+            background: url(../../assets/images/91/sprites.png) no-repeat -139px -7px;
+        }
+
+        .picture2 {
+            width: 23px;
+            height: 23px;
+
+            margin: 100px;
+            margin-top: 20px;
+            border: 1px solid #999;
+
+            background: url(../../assets/images/91/sprites.png) no-repeat 0 -107px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>我是原本的圖片</h2>
+    <div class="origin"></div>
+
+    <h2>我是使用精靈圖方式後的圖片</h2>
+    <div class="picture1"></div>
+    <div class="picture2"></div>
+</body>
+
+</html>
