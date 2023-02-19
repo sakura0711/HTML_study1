@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.name {
+    width: 800px;
+    height: 150px;
+    margin:100px auto;
+    border: 1px solid #888;
+}
+
+.letter {
+    float: left;
+
+    width: 130px;
+    height: 150px;
+}
+
+.y {
+    background: url(../assets/images/92/letter.png) no-repeat -46px -2005px;
+}
+
+.u {
+
+    background: url(../assets/images/92/letter.png) no-repeat -412px -1829px;
+}
+
+.k {
+
+    background: url(../assets/images/92/letter.png) no-repeat -765px -1389px;
+}
+
+.i {
+
+    background: url(../assets/images/92/letter.png) no-repeat -438px -1389px;
+}
+
+.n {
+
+    background: url(../assets/images/92/letter.png) no-repeat -224px -1619px;
+}
+
+.a {
+
+    background: url(../assets/images/92/letter.png) no-repeat -31px -1192px;
+}
