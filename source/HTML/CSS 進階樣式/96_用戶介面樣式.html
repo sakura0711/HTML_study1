@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用戶介面樣式</title>
+    <style>
+        *{
+            padding: 1px;
+            margin: 1px;
+            font: 600 20px/2 "Microsoft YaHei";
+            color: green;
+        }
+        #text2{
+            /* 禁止用戶拖動更改大小 */
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+
+        <!-- 取消輸入框選取時外框線 -->
+        <form action="www.com" method="post">
+            有選取框線的輸入框: <input type="text"><br>
+            沒有選取框線的輸入框: <input type="text" style="outline:none;"><br>
+        </form>
+    </div>
+
+    <div class="textarea">
+        
+        <!-- 取消文本域(textarea)可以拖動變更大小的效果 -->
+        <p>沒有添加較果時， textarea 可以拖動控制大小</p>
+        <textarea name="text1" id="text1" cols="30" rows="5"></textarea>
+        <p>添加效果之後， textarea 不能拖動改變大小</p>
+        <textarea name="text2" id="text2" cols="30" rows="5"></textarea>
+    </div>
+</body>
+</html>
