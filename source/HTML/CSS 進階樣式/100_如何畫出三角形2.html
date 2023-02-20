@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>畫出三角形2.0</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .parent {
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        .show {
+            float: left;
+            width: 30%;
+            height: 200px;
+            border: 1px solid #888;
+        }
+
+        .origin {
+            width: 0;
+            height: 0;
+            border-color: red blue pink green;
+            border-width: 50px;
+            border-style: solid;
+        }
+
+        .step1 {
+            width: 0;
+            height: 0;
+            border-color: red blue pink green;
+            /* 第1步 : 將 border-bottom 去掉 */
+            border-width: 50px 50px 0 50px;
+            border-style: solid;
+        }
+
+        .step2 {
+            width: 0;
+            height: 0;
+            border-color: red blue pink green;
+            /* 第2步 : 將 border-top 拉長 */
+            border-width: 90px 50px 0 50px;
+            border-style: solid;
+        }
+
+        .step3 {
+            width: 0;
+            height: 0;
+            /* 第3步 : 將其他設成 transparent 透明背景 */
+            border-color: transparent blue transparent transparent;
+            border-width: 90px 50px 0 10px;
+            border-style: solid;
+        }
+
+        .parent div {
+            margin: 30px auto;
+        }
+
+        .parent p {
+            margin-top: 10px;
+        }
+        h1{
+            margin-top: 50px;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>多樣化三角形</h1>
+    <div class="parent">
+        <div class="show">
+            <p>原始模樣</p>
+            <div class="origin"></div>
+        </div>
+
+        <div class="show">
+            <p>第1步 : 將 border-bottom 去掉</p>
+            <div class="step1"></div>
+        </div>
+
+        <div class="show">
+            <p>第2步 : 將 border-top 拉長</p>
+            <div class="step2"></div>
+        </div>
+
+        <div class="show">
+            <p>第3步 : 將其他設成 transparent 透明背景</p>
+            <div class="step3"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
