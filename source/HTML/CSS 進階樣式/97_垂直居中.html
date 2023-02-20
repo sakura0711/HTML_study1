@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical-align 垂直居中</title>
+    <style>
+
+        /* vertical-align 默認是 baseline 基線對齊 */
+        *{
+            font: 600 30px "Microsoft Sans Serif";
+
+        }
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        .box1{
+            vertical-align: top;
+        }
+        .box2{
+            vertical-align: middle;
+        }
+        .box3{
+            vertical-align: baseline;
+        }
+        .box4{
+            vertical-align: bottom;
+        }
+
+        div{
+            border-top: 2px solid #888;
+            border-bottom: 2px solid #888;
+        }
+    </style>
+</head>
+<body>
+    <h2>對齊 top 頂部</h2>
+    <div>
+        <img src="../../assets/images/cat2.png" alt="" class="box1">
+        我是一段文字。 Im a ppQQ test example
+    </div>
+
+    <h2>對齊 middle 中線</h2>
+    <div>
+        <img src="../../assets/images/cat2.png" alt="" class="box2">
+        我是一段文字。 Im a ppQQ test example
+    </div>
+
+    <h2>對齊 base-line 基線</h2>
+    <div>
+        <img src="../../assets/images/cat2.png" alt="" class="box3">
+        我是一段文字。 Im a ppQQ test example
+    </div>
+
+    <h2>對齊 bottom 底線</h2>
+    <div>
+        <img src="../../assets/images/cat2.png" alt="" class="box4">
+我是一段文字。 Im a ppQQ test example
+    </div>
+</body>
+</html>
