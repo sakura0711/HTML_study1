@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin 負值的運用</title>
+    <style>
+        ul {
+            list-style: none;
+
+        }
+
+        li {
+            float: left;
+            width: 200px;
+            height: 100px;
+            border: 4px solid pink;
+        }
+
+        li:hover {
+            border: 4px solid skyblue;
+        }
+
+        .after {
+            /* 要消除合併產生的加粗效果，可以將 margin 值 = border 的大小/2 */
+            margin: -2px;
+        }
+
+        .after:hover {
+            /* 但是會產生覆蓋掉前一個邊框的問題，所以我們可以透過 position: relative 來使當前盒子顯示在最上面 */
+            position: relative;
+            border: 4px solid skyblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>當使用 left 浮動時，border 會因為合併貼齊產生加粗的效果</h1>
+    <ul style="display: inline-block">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <h2>我們可以運用 負 margin 值，解決這個問題</h2>
+    <p>但是會產生覆蓋掉前一個邊框的問題，所以我們可以透過 position: relative 來使當前盒子顯示在最上面</p>
+    <ul>
+        <li class="after">1</li>
+        <li class="after">2</li>
+        <li class="after">3</li>
+        <li class="after">4</li>
+        <li class="after">5</li>
+    </ul>
+</body>
+
+</html>
