@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角!~</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        p {
+            padding-top: 50px;
+        }
+
+        .box {
+            position: relative;
+
+            width: 200px;
+            height: 300px;
+
+            margin: 100px auto;
+            background-color: pink;
+        }
+
+        .box::before {
+            content: "";
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            margin-left: -20px;
+
+            width: 0;
+            height: 0;
+
+            border: 20px solid transparent;
+            border-bottom: 20px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>我是文字!!!!!</p>
+    </div>
+</body>
+
+</html>
