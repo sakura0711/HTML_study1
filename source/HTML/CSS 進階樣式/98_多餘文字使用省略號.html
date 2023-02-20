@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多的給我消失?!</title>
+    <style>
+        p {
+            font: 700 16px/2 "Microsoft Sans Serif";
+            color: green;
+        }
+
+        .left-box {
+            float: left;
+        }
+
+        .right-box {
+            float: right;
+        }
+
+        .left-box div {
+            width: 100px;
+            height: 20px;
+            background-color: plum;
+        }
+
+        .text {
+            /* 1. 強制多的文本一行顯示 */
+            white-space: nowrap;
+        }
+
+        .hidden {
+            white-space: nowrap;
+
+            /* 2. 將多餘的部分隱藏 */
+            overflow: hidden;
+        }
+
+        .ellipse {
+            white-space: nowrap;
+            overflow: hidden;
+
+            /* 3. 多餘的部分用省略號替代 */
+            text-overflow: ellipsis;
+        }
+
+        .text2 {
+            height: 120px;
+            width: 100px;
+            background-color: pink;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 使用伸縮盒子模型顯示。會有兼容性問題 */
+            display: -webkit-box;
+            /* 限制一個區塊元素顯示的文字行數(第幾行要顯示省略號) */
+            -webkit-line-clamp: 2;
+            /* 設定或檢查伸縮盒子對象內的子元素排列方式。 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-box">
+        <h1>單行文本要使用省略號時要經過 3 個步驟</h1>
+        <p>1. 強制多的文本一行顯示</p>
+        <div class="text">喵喵咪喵貓喵喵ㄇ喵喵喵ㄇ喵喵喵一喵</div>
+        <p>2. 將多餘的部分隱藏</p>
+        <div class="hidden">喵喵咪喵貓喵喵ㄇ喵喵喵ㄇ喵喵喵一喵</div>
+        <p>3. 多餘的部分用省略號替代</p>
+        <div class="ellipse">喵喵咪喵貓喵喵ㄇ喵喵喵ㄇ喵喵喵一喵</div>
+    </div>
+    <div class="right-box">
+        <h1>多行文本要使用省略號時替代較為複雜，並且會有兼容性問題</h1>
+        <div class="text2">
+            <P>喵喵咪貓喵喵喵咪喵咪咪喵咪凹喵喵喵咪喵咪喵喵</P>
+        </div>
+    </div>
+</body>
+
+</html>
