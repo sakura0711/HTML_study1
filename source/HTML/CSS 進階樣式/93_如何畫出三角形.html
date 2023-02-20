@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角形~</title>
+    <style>
+        p {
+            font: 700 20px/2 "Microsoft YaHei";
+            color: black;
+        }
+
+        .box1 {
+            /* 首先，我們需要一個 寬和高都是 0 的盒子 */
+            width: 0;
+            height: 0;
+
+            /* 接著我們要給盒子設定不同邊框大小、顏色 */
+            border-top: 50px solid red;
+            border-right: 50px solid blue;
+            border-bottom: 50px solid pink;
+            border-left: 50px solid skyblue;
+        }
+
+        .box2 {
+            width: 0;
+            height: 0;
+
+            /* 先將所有邊設為透明 */
+            border: 50px solid transparent;
+            /* 再利用 CSS 層疊性覆蓋 */
+            border-bottom: 50px solid green;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>CSS 三角形的原理，是由設定邊框組成</p>
+    <div class="box1"></div>
+    <p>可以將其他方向的邊框顏色變成透明，即可實現三角的效果</p>
+    <div class="box2"></div>
+</body>
+
+</html>
