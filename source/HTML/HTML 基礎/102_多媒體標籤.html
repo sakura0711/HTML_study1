@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>終於可以撥放影片和音樂了</title>
+    <style>
+        .left {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        .right {
+            position: relative;
+            right: 0;
+            top: 0;
+        }
+
+        footer {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: #888;
+            font-size: 25px;
+
+        }
+        a:hover{
+            color: green;
+            font-weight: bold;
+        }
+        a::before{
+            content:"";
+            position: absolute;
+            top: 4px;
+            left: -25px;
+
+            width: 0;
+            height: 0;
+            border-color: transparent transparent transparent red;
+            border-width: 10px 20px 10px;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <!-- ! 須注意，使用google 瀏覽器要使用自動撥放必須添加 muted 禁音屬性 -->
+        <p>影片標籤</p>
+        <video src="../../assets/Lady Gaga - Hold My Hand.mp4" width="50%" height="50%" controls="true" autoplay="true"
+            muted="muted"></video>
+    </div>
+    <div class="right">
+        <p>音訊標籤</p>
+        <audio src="../../assets/Lady Gaga - Hold My Hand.mp3" controls="true" muted="muted"></audio>
+    </div>
+    <footer>
+        <p>
+            <a href="https://www.fooish.com/html/video-tag.html">詳細參數可參考此篇文章</a>
+        </p>
+    </footer>
+</body>
+
+</html>
