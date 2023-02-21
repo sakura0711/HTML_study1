@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 屬性選擇器</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            float: left;
+        }
+
+        a {
+            padding: 10px 20px;
+            color: blue;
+            text-decoration: none;
+
+        }
+
+        div.content {
+            position: relative;
+            top: 100px;
+        }
+
+        /* 注意，!!! 屬性選擇器也有權重問題 。
+        類選擇器、偽類選擇器、屬性選擇器 都是 10*/
+
+
+        /* 選取 input 裡面有 value 屬性的 */
+        /* 權重: input (1) + value (10) = 11 */
+        input[value] {
+            color: plum;
+        }
+
+        /* 選取 input 裡面 type 值等於 text 的 (重點!!!!!)*/
+        input[type="password"] {
+            color: cyan;
+            outline: none;
+        }
+
+        /* ^= 是從 "開頭" 開始匹配字串 */
+        /* 以 "#" 開頭的錨點連接(當前頁面跳轉) */
+        a[href^="#"] {
+            background-color: gold;
+        }
+
+        /* $= 是從 "結尾" 開始匹配字串 */
+        /* 以 ".org" 结尾的鏈接 */
+        a[href$=".org"] {
+            color: red;
+        }
+
+        /* 包含 "example" 的鏈接 */
+        a[href*="example"] {
+            background-color: silver;
+        }
+
+        /* 包含 "insensitive" 的鏈接，"不區分大小寫" */
+        a[href*="insensitive" i] {
+            color: cyan;
+        }
+
+        /* 包含 "cAsE" 的鏈接，"區分大小寫" */
+        a[href*="cAsE" s] {
+            color: pink;
+        }
+
+        .icon_parent[class^=icon] {
+            color: rgb(30, 186, 155);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><input type="text" name="text" id="text" value="text"></li>
+        <li><input type="password" name="Psw" id="pws"></li>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+    </ul>
+
+    <div class="content">
+        <div class="icon_parent">
+            <div class="icon1">icon</div>
+        </div>
+        <div class="icon2">icon</div>
+        <div class="icon3">icon</div>
+        <div class="icon4">icon</div>
+    </div>
+
+</body>
+
+</html>
