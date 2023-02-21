@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>真真假假</title>
+    <style>
+        p{
+            display: inline-block;
+
+            width: 200px;
+            height: 50px;
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* 在前方插入一個盒子(不會有 html 標籤) */
+        p:before{
+            /* content 為必填屬性 */
+            content: "before";
+        }
+
+        /* 在前方插入一個盒子(不會有 html 標籤) */
+        p:after{
+            content: "after";
+        }
+    </style>
+</head>
+<body>
+    <p>我是內容</p>
+</body>
+</html>
