@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結構偽類選擇器</title>
+    <!-- 結構偽類選擇器權重也是 10 -->
+    <style>
+        ul {
+            list-style: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* 選擇父元素中 "第一個" 是(li)的子元素  */
+        ul.example1 li:first-child {
+            background-color: skyblue;
+        }
+
+        /* 選擇父元素中的 "最後一個" 子元素 */
+        ul.example1 li:last-child {
+            background-color: blue;
+        }
+
+        /* 選擇父元素中 "第 n 個" 子元素 */
+        /* n 可以是 公式、關鍵字(odd、even) */
+        ul.example1 li:nth-child(3) {
+            background-color: pink;
+        }
+
+        ul.example1 li:nth-child(6) {
+            background-color: pink;
+        }
+
+        /* 使用關鍵字選取 */
+        ul.example2 li:nth-child(even) {
+            background-color: gray;
+        }
+
+        ul.example2 li:nth-child(odd) {
+            background-color: #c8c8c8;
+        }
+
+        /* 使用公式選取 */
+        /* 會像迴圈一樣，n 從 0 開始 */
+        ul.example2 li:nth-child(3n) {
+            /*倍數選取*/
+            /* so -> 3n : 0 * 3 = 0、1 * 3 = 3 、 6 、 9 ... */
+            color: #fff;
+        }
+
+        /* n 從第 3 個(包含)到最後一個 */
+        ul.example2 li:nth-child(n+3) {
+            /*區域選取*/
+            font-size: 16px;
+        }
+
+        /* -n 從第 6 個(包含)到 第 1 個 */
+        ul.example2 li:nth-child(-n+6) {
+            /*區域選取*/
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        /*-----------------------------------分隔線-----------------------------------*/
+
+        /* :nth-child() 與 :nth-of-type() 的區別 */
+
+        /* div:nth-child(1) 是先看 :nth-child() 的數字序號，在看前面的容器 */
+        /* 所以就會發生  因為 p 是第一個兒子，但是他不是 div 屬性。所以查找不到 */
+        div.example3 div:nth-child(1) {
+            background-color: pink;
+        }
+
+        /* div:nth-of-type(1) 剛好相反， 他會先找符合 div 的標籤，在看後面的序號  */
+        /* 可以有效避免上面情況發生 */
+        div.example3 div:nth-of-type(1) {
+            background-color: plum;
+        }
+
+        /* !! first-child 和 :first-of-type 、 last-child 和 last-of-type 也是相同道理 */
+    </style>
+</head>
+
+<body>
+    <h2>example1</h2>
+    <ul class="example1">
+        <li>我是 第 1 個 child</li>
+        <li>我是 第 2 個 child</li>
+        <li>我是 第 3 個 child</li>
+        <li>我是 第 4 個 child</li>
+        <li>我是 第 5 個 child</li>
+        <li>我是 第 6 個 child</li>
+        <li>我是 第 7 個 child</li>
+    </ul>
+
+    <h2>example2</h2>
+    <ul class="example2">
+        <li>我是 第 1 個 child</li>
+        <li>我是 第 2 個 child</li>
+        <li>我是 第 3 個 child</li>
+        <li>我是 第 4 個 child</li>
+        <li>我是 第 5 個 child</li>
+        <li>我是 第 6 個 child</li>
+        <li>我是 第 7 個 child</li>
+    </ul>
+
+    <h2>example3</h2>
+    <div class="example3">
+        <p>我是段落</p>
+        <div>div1</div>
+        <div>div2</div>
+    </div>
+</body>
+
+</html>
