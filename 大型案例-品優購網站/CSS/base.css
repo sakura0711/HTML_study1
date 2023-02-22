@@ -14,7 +14,7 @@ dl {
 
 a {
     text-decoration: none;
-    color: black;
+    color: red;
 }
 
 em,
@@ -30,7 +30,8 @@ img {
     vertical-align: middle;
 }
 
-button {
+button,
+.more {
     cursor: pointer;
 }
 
