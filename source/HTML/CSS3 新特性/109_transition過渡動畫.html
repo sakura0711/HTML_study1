@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 過渡動畫</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* transition: 要過渡的屬性(全部可以寫 all) | 花費的時間 | 運動曲線 | 延遲幾秒開始 */
+            /* 花費時間一定要寫 */
+            transition: background 0.4s ease;
+            /*只有背景片換有過渡*/
+
+            transition: width 0.4s ease, height 0.4s ease;
+            /*想要使用多個可以用逗號隔開*/
+
+        }
+
+        .box:hover {
+            width: 500px;
+            height: 400px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
