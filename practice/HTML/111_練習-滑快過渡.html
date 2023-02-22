@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滑快練習</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        i:before {
+            content: "";
+            position: absolute;
+            left: 0%;
+            top: 0;
+            width: 200px;
+            height: 200px;
+
+            background-color: pink;
+            transition: all 0.8s;
+
+        }
+        i:hover::before{
+            left: -200px;
+        }
+        i:hover::after{
+            left: 0%;
+        }
+        i:after {
+            content: "";
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            transition: all 0.8s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <i class="block"></i>
+    </div>
+</body>
+
+</html>
