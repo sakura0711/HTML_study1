@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我是小跟班~</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .parent {
+            width: 500px;
+            height: 200px;
+            background-color: plum;
+        }
+
+        .child {
+            /* 可以使用 + - * / 計算 */
+            /* 100% 是父親的大小， 也就是說 p 永遠比父親width要小 50xp */
+            width: calc(100% - 100px);
+            /*注意運算符號要用空格分開*/
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
