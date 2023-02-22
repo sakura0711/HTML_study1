@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 盒子模型</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font: 600 18px/1.5 "Microsoft YaHei";
+
+        }
+
+        .example1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 默認形況下，我們添加 padding 或是 border 值都會造成盒子被撐大 */
+            padding: 20px;
+            border: 10px solid skyblue;
+
+            /* 默認是 box-sizing: content-box; ， 最終大小是 width + padding + border */
+            box-sizing: content-box;
+        }
+
+        .example2 {
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+
+            padding: 20px;
+            border: 10px solid skyblue;
+            /* 添加 box-sizing: border-box; 後，最終大小會是 width 的大小(不管添加 padding or border ) */
+            box-sizing: border-box;
+        }
+
+        div {
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="example1">
+        我是內容1，我會被 padding 和 border 撐大
+    </div>
+    <div class="example2">
+        我是內容2，我添加了 box-sizing : border-box; 屬性，所以我不會被撐大
+    </div>
+</body>
+
+</html>
