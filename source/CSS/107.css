@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+ul {
+    width: 1500px;
+    height: 300px;
+
+}
+
+li {
+    float: left;
+    width: 250px;
+    height: 300px;
+    border: gray solid 1px;
+}
+
+.grayscale { 
+    /* 灰階 */
+    /* grayscale()可以將網頁元素轉換成黑白影像。括號裡可以使用0% 到100%的百分比控制、也可以使用0至1的數字控制。 */
+    filter: grayscale(90%);
+}
+
+.sepia {
+    /* 懷舊 */
+    /* sepia()會在影像疊上一層深褐色、產生老照片的效果。控制的方法和grayscale()一樣 */
+    filter: sepia(0.5);
+}
+
+.saturate {
+    /* 飽和 */
+    /* 調整影像的飽和度、可以讓影像看來更鮮艷。1和100%表示顏色不變；小於1和100%是降低飽和度；大於1和100%則是增加飽和度。 */
+    filter: saturate(200%);
+}
+
+.hue-rotate {
+    /* 色相旋轉 */
+    /* 透過旋轉色相環可以產生很詭異的顏色效果。因為是旋轉色相環、所以使用角度(0deg – 360deg)來控制。 */
+    filter: hue-rotate(90deg);
+}
+
+.invert {
+    /* 負片 */
+    /* 使用1或100%會讓影像看起來像底片一樣、明暗相反、顏色轉變成補色 */
+    filter: invert(0.5);
+}
+
+.opacity {
+    /* 透明度 */
+    /* 這是最容易理解的濾鏡了、0表示完全透明、1表示完全不透明 */
+    filter: opacity(50%);
+}
+
+.brightness {
+    /* 亮度 */
+    /* 就像調整螢幕的亮度一樣、你可以增加也可以減少亮度。100%表示不變、小於100%是減少亮度、大於100%則是增加亮度、設成0%會讓影像完全變黑。 */
+    filter: brightness(40%);
+}
+
+.contrast {
+    /* 對比 */
+    /* 作用的方式是調整畫面明亮和陰暗部份的差距。如果設定成0、影像中明亮和陰暗部份沒有了差距、影像就變成了灰色的色塊。 */
+    filter: contrast(2);
+}
+
+.blur {
+    /* 模糊 */
+    /* 有點像失焦的效果、括號裡要設定模糊的程度。設定時別忘了加上單位 */
+    filter: blur(4px);
+}
+
+.drop-shadow {
+    /* 下拉陰影 */
+    /* 這是可以真實反應影像原始內容的陰影效果。 */
+    filter: drop-shadow(5px 5px 5px #333);
+}
