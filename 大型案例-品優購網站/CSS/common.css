@@ -131,11 +131,7 @@
 
  .shopcar::before {
      content: "\f07a";
-     position: absolute;
-     top: 0;
-     left: 8px;
-     width: 20px;
-     height: 20px;
+     margin-right: 10px;
      font-family: FontAwesome;
      color: rgb(200, 0, 0);
 
@@ -143,11 +139,7 @@
 
  .shopcar::after {
      content: "\f105";
-     position: absolute;
-     top: 0;
-     right: 10px;
-     width: 20px;
-     height: 20px;
+     margin-left: 10px;
      font-family: FontAwesome;
      color: #888;
  }
