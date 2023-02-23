@@ -59,12 +59,15 @@
      height: 106px;
  }
 
- header .logo {
+ header .logo a {
      position: absolute;
      left: 0;
      top: 10px;
      width: 180px;
      height: 73px;
+     /* 把標題文字隱藏 */
+     font-size: 0;
+     background: url(../assets/images/logo.png) no-repeat center center;
  }
 
  .search {
@@ -134,6 +137,7 @@
      width: 20px;
      height: 20px;
      font-family: FontAwesome;
+     color: rgb(200, 0, 0);
 
  }
 
@@ -145,7 +149,7 @@
      width: 20px;
      height: 20px;
      font-family: FontAwesome;
-
+     color: #888;
  }
 
 
