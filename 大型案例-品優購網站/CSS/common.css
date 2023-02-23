@@ -1,203 +1,251 @@
- /* 版心 */
- .write {
-     width: 1200px;
-     margin: 0 auto;
-     vertical-align: middle;
- }
+/* 版心 */
+.write {
+    width: 1200px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
 
- /* 左浮動 */
- .fl {
-     float: left;
- }
+/* 左浮動 */
+.fl {
+    float: left;
+}
 
- /* 右浮動 */
- .fr {
-     float: right;
- }
+/* 右浮動 */
+.fr {
+    float: right;
+}
 
- /* > 快捷導航欄 start --------------------------------------------------------------------------*/
- .shortcut {
-     width: 100%;
-     height: 28px;
-     background-color: #d4d4d4;
- }
+/* > 快捷導航欄 start --------------------------------------------------------------------------*/
+.shortcut {
+    width: 100%;
+    height: 28px;
+    background-color: #d4d4d4;
+}
 
- .shortcut ul {
-     margin: 4px 0;
- }
+.shortcut ul {
+    margin: 4px 0;
+}
 
- .shortcut .fl li,
- .shortcut .fr li {
-     float: left;
-     padding: 0 10px;
- }
+.shortcut .fl li,
+.shortcut .fr li {
+    float: left;
+    padding: 0 10px;
+}
 
- .shortcut .fr li {
-     border-right: 1px solid #777;
- }
+.shortcut .fr li {
+    border-right: 1px solid #777;
+}
 
- .shortcut .more::after {
-     /* 字體圖標 */
-     content: '\f107';
-     position: relative;
-     padding-left: 5px;
-     font-family: FontAwesome;
-     font-weight: bold;
-     width: 40px;
-     height: 40px;
- }
+.shortcut .more::after {
+    /* 字體圖標 */
+    content: '\f107';
+    position: relative;
+    padding-left: 5px;
+    font-family: FontAwesome;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+}
 
- .shortcut a:hover {
-     font-size: larger;
- }
+.shortcut a:hover {
+    font-size: larger;
+}
 
- /*  快捷導航欄 end -----------------------------------------------------------------------*/
+/*  快捷導航欄 end -----------------------------------------------------------------------*/
+/* > 頭部資訊欄 start --------------------------------------------------------------------*/
+header .write {
+    position: relative;
+    height: 106px;
+}
 
- /* > 頭部資訊欄 start --------------------------------------------------------------------*/
- header .write {
-     position: relative;
-     height: 106px;
- }
+header .logo a {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 180px;
+    height: 73px;
+    /* 把標題文字隱藏 */
+    font-size: 0;
+    background: url(../assets/images/logo.png) no-repeat center center;
+}
 
- header .logo a {
-     position: absolute;
-     left: 0;
-     top: 10px;
-     width: 180px;
-     height: 73px;
-     /* 把標題文字隱藏 */
-     font-size: 0;
-     background: url(../assets/images/logo.png) no-repeat center center;
- }
+.search {
+    position: absolute;
+    left: 50%;
+    margin-left: -270px;
+    top: 15px;
+    width: 540px;
+    height: 50px;
+}
 
- .search {
-     position: absolute;
-     left: 50%;
-     margin-left: -270px;
-     top: 15px;
-     width: 540px;
-     height: 50px;
- }
+.search input {
+    width: 460px;
+    height: 28px;
+    padding-left: 20px;
+    border: 2px solid rgb(200, 0, 0);
+}
 
- .search input {
-     width: 460px;
-     height: 28px;
-     padding-left: 20px;
-     border: 2px solid rgb(200, 0, 0);
- }
+.search a {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 28px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: rgb(200, 0, 0);
+}
 
- .search a {
-     position: absolute;
-     right: 0;
-     width: 80px;
-     height: 28px;
-     color: #fff;
-     text-align: center;
-     font-size: 16px;
-     line-height: 28px;
-     background-color: rgb(200, 0, 0);
- }
+.hotwords ul {
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 50px;
+    width: 540px;
+    height: 20px;
+}
 
- .hotwords ul {
-     position: absolute;
-     left: 50%;
-     margin-left: -250px;
-     top: 50px;
-     width: 540px;
-     height: 20px;
- }
+.hotwords li {
+    float: left;
+    padding-right: 10px;
+}
 
- .hotwords li {
-     float: left;
-     padding-right: 10px;
- }
-
- .hotwords li a {
-     color: #888;
- }
-
- .hotwords li a:hover {
-     color: red;
- }
-
- .shopcar {
-     position: absolute;
-     top: 20px;
-     right: 10px;
-     width: 130px;
-     height: 35px;
-     border: 1px solid #bbbbbb;
-     background-color: #f6f6f6;
-     text-align: center;
-     line-height: 35px;
- }
-
- .shopcar::before {
-     content: "\f07a";
-     margin-right: 10px;
-     font-family: FontAwesome;
-     color: rgb(200, 0, 0);
-
- }
-
- .shopcar::after {
-     content: "\f105";
-     margin-left: 10px;
-     font-family: FontAwesome;
-     color: #888;
- }
-
-
- .shopcar .count {
-     position: absolute;
-     top: -10px;
-     /* 定位用 left ，因為數字會往右走 */
-     left: 105px;
-     padding: 5px;
-     height: 15px;
-     background-color: red;
-     border-radius: 10px 10px 10px 0;
-     line-height: 5px;
-     color: #fff;
- }
-
- /*  頭部資訊欄 end --------------------------------------------------------------------*/
-
- /*  > 主導航欄 start --------------------------------------------------------------------*/
- nav {
-     border-bottom: 3px solid rgb(200, 0, 0);
- }
-
- nav .write {
-     width: 1200px;
-     height: 45px;
-     font: 520 16px "Microsoft YaHei";
-     line-height: 45px;
-     cursor: pointer;
- }
-
- nav .dropdown {
-     width: 210px;
-     height: 45px;
-     background-color: rgb(200, 0, 0);
-     color: #fff;
-     text-align: center;
- }
-
- nav .navitems ul {
-     width: 990px;
-     height: 45px;
- }
-
- nav .navitems li {
-     float: left;
-     padding: 0 20px;
- }
- nav .navitems li a{
+.hotwords li a {
     color: #888;
- }
- nav .navitems li a:hover {
-     color: red;
- }
+}
 
- /*   主導航欄 end --------------------------------------------------------------------*/
+.hotwords li a:hover {
+    color: red;
+}
+
+.shopcar {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 130px;
+    height: 35px;
+    border: 1px solid #bbbbbb;
+    background-color: #f6f6f6;
+    text-align: center;
+    line-height: 35px;
+}
+
+.shopcar::before {
+    content: "\f07a";
+    margin-right: 10px;
+    font-family: FontAwesome;
+    color: rgb(200, 0, 0);
+}
+
+.shopcar::after {
+    content: "\f105";
+    margin-left: 10px;
+    font-family: FontAwesome;
+    color: #888;
+}
+
+.shopcar .count {
+    position: absolute;
+    top: -10px;
+    /* 定位用 left ，因為數字會往右走 */
+    left: 105px;
+    padding: 5px;
+    height: 15px;
+    background-color: red;
+    border-radius: 10px 10px 10px 0;
+    line-height: 5px;
+    color: #fff;
+}
+
+/*  頭部資訊欄 end --------------------------------------------------------------------*/
+
+/*  > 主導航欄 start --------------------------------------------------------------------*/
+nav {
+    border-bottom: 3px solid rgb(200, 0, 0);
+}
+
+nav .write {
+    width: 1200px;
+    height: 45px;
+    font: 520 16px "Microsoft YaHei";
+    line-height: 45px;
+    cursor: pointer;
+}
+
+nav .dropdown {
+    width: 210px;
+    height: 45px;
+}
+
+nav .dropdown .dt {
+    width: 210px;
+    height: 100%;
+    background-color: rgb(200, 0, 0);
+    color: #fff;
+    text-align: center;
+}
+
+.dropdown .dd {
+    /* display: none; */
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+.dropdown .dd ul li {
+    height: 31px;
+}
+
+.dropdown .dd ul li a {
+    position: absolute;
+    height: 31px;
+    width: 210px;
+    line-height: 31px;
+    padding-left: 15px;
+}
+
+.dropdown .dd ul li a:hover {
+    background-color: #fff;
+    color: #c81623;
+}
+
+.dropdown .dd ul a:hover::after {
+    color: #c81623;
+}
+
+.dropdown .dd ul li a::after {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    color: #fff;
+    font-family: FontAwesome;
+    content: '\f0da';
+    font-size: 14px;
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+nav .navitems ul {
+    width: 990px;
+    height: 45px;
+}
+
+nav .navitems li {
+    float: left;
+    padding: 0 20px;
+}
+
+nav .navitems li a {
+    color: #888;
+}
+
+nav .navitems li a:hover {
+    color: red;
+}
+
+/*   主導航欄 end --------------------------------------------------------------------*/
