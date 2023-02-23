@@ -110,10 +110,13 @@
  .hotwords li {
      float: left;
      padding-right: 10px;
-     cursor: pointer;
  }
 
- .hotwords li:hover {
+ .hotwords li a {
+     color: #888;
+ }
+
+ .hotwords li a:hover {
      color: red;
  }
 
@@ -148,13 +151,53 @@
  .shopcar .count {
      position: absolute;
      top: -10px;
-     right: 10px;
-     width: 18px;
+     /* 定位用 left ，因為數字會往右走 */
+     left: 105px;
+     padding: 5px;
      height: 15px;
      background-color: red;
      border-radius: 10px 10px 10px 0;
-     line-height: 15px;
+     line-height: 5px;
      color: #fff;
  }
 
  /*  頭部資訊欄 end --------------------------------------------------------------------*/
+
+ /*  > 主導航欄 start --------------------------------------------------------------------*/
+ nav {
+     border-bottom: 3px solid rgb(200, 0, 0);
+ }
+
+ nav .write {
+     width: 1200px;
+     height: 45px;
+     font: 520 16px "Microsoft YaHei";
+     line-height: 45px;
+     cursor: pointer;
+ }
+
+ nav .dropdown {
+     width: 210px;
+     height: 45px;
+     background-color: rgb(200, 0, 0);
+     color: #fff;
+     text-align: center;
+ }
+
+ nav .navitems ul {
+     width: 990px;
+     height: 45px;
+ }
+
+ nav .navitems li {
+     float: left;
+     padding: 0 20px;
+ }
+ nav .navitems li a{
+    color: #888;
+ }
+ nav .navitems li a:hover {
+     color: red;
+ }
+
+ /*   主導航欄 end --------------------------------------------------------------------*/
