@@ -1,0 +1,71 @@
+/* > 網站初始化 CSS */
+* {
+    padding: 0;
+    margin: 0;
+    /* 使用 CSS3 盒子模型，須注意兼容性問題 */
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+em,
+i {
+    color: black;
+    font-style: normal;
+}
+
+img {
+    /* 兼容性設定 */
+    border: 0;
+    /* 消除圖片底部空白 */
+    vertical-align: middle;
+}
+
+button,
+.more {
+    cursor: pointer;
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思照顧兼容性 */
+    font-family: "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", "\5B8B\4F53", sans-serif;
+    border: 0;
+    /* 取消外輪廓 */
+    outline: none;
+}
+
+body {
+    /* CSS3 抗鋸齒，讓文字更清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.none,
+.hide {
+    display: none;
+}
+
+/* 清除浮動 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
