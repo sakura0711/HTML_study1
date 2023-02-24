@@ -187,7 +187,7 @@ nav .dropdown .dt {
 }
 
 .dropdown .dd {
-    /* display: none; */
+    display: none;
     width: 210px;
     height: 465px;
     background-color: #c81623;
@@ -249,3 +249,106 @@ nav .navitems li a:hover {
 }
 
 /*   主導航欄 end --------------------------------------------------------------------*/
+
+/* > 底部 footer 樣式 start ---------------------------------------------------------*/
+footer .write {
+    width: 1200px;
+    height: 420px;
+    background-color: #f6f6f6;
+}
+
+.mod_service {
+    padding-top: 30px;
+    height: 110px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.mod_service li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 30px;
+}
+
+.mod_service .service_txt {
+    padding: 5px 0;
+}
+
+.mod_service .service_txt h3 {
+    font-size: 14px;
+}
+
+.mod_service .service_txt p {
+    font-size: 12px;
+}
+
+.serv--bc1 {
+    background: url(../assets/images/icons.png) no-repeat -253px -3px;
+}
+
+.serv--bc2 {
+    background: url(../assets/images/icons.png) no-repeat -255px -53px;
+}
+
+.serv--bc3 {
+    background: url(../assets/images/icons.png) no-repeat -257px -106px;
+
+}
+
+.serv--bc4 {
+    background: url(../assets/images/icons.png) no-repeat -258px -157px;
+
+}
+
+.serv--bc5 {
+    background: url(../assets/images/icons.png) no-repeat -256px -208px;
+
+}
+
+.mod_help {
+    height: 192px;
+    margin-top: 20px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 192px;
+    height: 192px;
+    padding-left:25px;
+    letter-spacing: .1em;
+    line-height: 1.6;
+}
+.mod_help dt {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mod_help dd a,
+.mod_help dt a {
+    color: #4e4e4e;
+}
+
+.mod_help dd a:hover{
+    color: red;
+}
+
+.mod_help .help--QRcode{
+    float: right;
+    width: 240px;
+    height: 192px;
+    padding-left: 20px;
+}
+.help--QRcode .QRcode-img{
+    width: 90px;
+    height: 90px;
+    background: url(../assets/images/wx_cz.jpg) no-repeat center center;
+}
+
+/* 底部 footer 樣式 end ----------------------------------------------------------*/
