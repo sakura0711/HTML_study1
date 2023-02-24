@@ -24,7 +24,7 @@
 <br>
 
 * JavaScript
-  - ❌完全還沒...
+  - view HTML_study2...
 <br>
 
 ---
