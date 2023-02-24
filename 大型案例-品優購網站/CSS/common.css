@@ -315,16 +315,18 @@ footer .write {
 .mod_help {
     height: 192px;
     margin-top: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
 .mod_help dl {
     float: left;
     width: 192px;
     height: 192px;
-    padding-left:25px;
+    padding-left: 25px;
     letter-spacing: .1em;
     line-height: 1.6;
 }
+
 .mod_help dt {
     font-size: 18px;
     font-weight: 600;
@@ -335,20 +337,47 @@ footer .write {
     color: #4e4e4e;
 }
 
-.mod_help dd a:hover{
+.mod_help dd a:hover {
     color: red;
 }
 
-.mod_help .help--QRcode{
+.mod_help .help--QRcode {
     float: right;
     width: 240px;
     height: 192px;
     padding-left: 20px;
 }
-.help--QRcode .QRcode-img{
+
+.help--QRcode .QRcode-img {
     width: 90px;
     height: 90px;
     background: url(../assets/images/wx_cz.jpg) no-repeat center center;
+}
+
+.mod_copyright {
+    width: 1200px;
+    height: 118px;
+    margin-top: 20px;
+    text-align: center;
+    color: #999999;
+
+}
+
+.mod_copyright ul {
+    width: 1200px;
+    height: 20px;
+    text-align: center;
+}
+
+.mod_copyright li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #bababa;
+    line-height: .9;
+}
+
+.mod_copyright li:last-child {
+    border: 0;
 }
 
 /* 底部 footer 樣式 end ----------------------------------------------------------*/
