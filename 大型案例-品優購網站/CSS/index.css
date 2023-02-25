@@ -1,0 +1,54 @@
+.main {
+    width: 980px;
+    height: 455px;
+
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    float: left;
+    width: 715px;
+    height: 455px;
+}
+
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+    background-color: red;
+}
+
+.news {
+    width: 250px;
+    height: 165px;
+    border: 1px solid #888;
+
+    /* temp style*/
+    background-color: #fff;
+}
+.news-hd{
+    height: 32px;
+    padding:0 16px;
+    line-height: 32px;
+    border-bottom: 1px dashed  #888;
+}
+
+.news-hd span:after {
+    content: '\f0da';
+    position: relative;
+    right: 0;
+    top: 0;
+    font-family: FontAwesome;
+}
+.news-bd {
+    float: left;
+    width: 100%;
+}
+.news-bd ul {
+    margin-top: 10px;
+}
+.news-bd li {
+    padding-left: 16px;
+    line-height: 22px;
+}
