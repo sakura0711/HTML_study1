@@ -22,9 +22,9 @@
     width: 250px;
     height: 165px;
     border: 1px solid #e4e4e4;
-
     /* temp style*/
     background-color: #fff;
+
 }
 
 .news-hd {
@@ -44,7 +44,7 @@
 
 .news-bd {
     float: left;
-    width: 100%;
+    width: 90%;
 }
 
 .news-bd ul {
@@ -54,6 +54,10 @@
 .news-bd li {
     padding-left: 16px;
     line-height: 22px;
+    /* 文字省略效果 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .lifeservice {
@@ -82,11 +86,121 @@
     display: inline-block;
     width: 61px;
     height: 50px;
-    background: url(../assets/images/icons.png) no-repeat 
+    background: url(../assets/images/icons.png) no-repeat
 }
-.lifeservice ul li a:hover+p{
+
+.lifeservice ul li a:hover+p {
     color: red;
 }
+
 .bargain {
     margin-top: 7px;
+}
+
+/* 推薦區域 */
+.recom {
+    height: 165px;
+    margin-top: 10px;
+}
+
+.recom-hd {
+    float: left;
+    width: 210px;
+    height: 165px;
+    background: url(../assets/images/recom.png) no-repeat center rgba(0, 0, 0, 0.5);
+}
+
+.recom-bd ul {
+    float: right;
+}
+
+.recom-bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom-bd ul li:nth-child(-n+3)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.recom-bd li img {
+    width: 245px;
+    height: 165px;
+}
+
+/* 商品電梯欄位 ----------------------------------------------------------------------*/
+.commodify--floor {
+    margin-bottom: 20px;
+}
+
+/* > 家電區 */
+
+.home_app--hd {
+    height: 37px;
+    margin-top: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.home_app--hd h3 {
+    font-size: 20px;
+    color: #c81623;
+}
+
+.home_app--hd li {
+    float: left;
+    margin-top: 10px;
+    line-height: 10px;
+    border-right: 1px solid #888;
+}
+
+.home_app--hd ul li a {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.home_app--hd .tab-list ul li:last-child {
+    border: 0;
+}
+
+.home_app--bd {
+    height: 360px;
+}
+
+.tab_list--items>div {
+    float: left;
+}
+
+.tab_list--items a img {
+    width: 100%;
+}
+
+.tab_list--items ul li {
+    float: left;
+    width: 85px;
+    height: 32px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.tab_list--items .col_1-210 {
+    width: 210px;
+}
+
+.tab_list--items .col_2-330 {
+    width: 330px;
+}
+
+.tab_list--items .col_3-220,
+.tab_list--items .col_4-220,
+.tab_list--items .col_5-220 {
+    width: 220px;
 }
