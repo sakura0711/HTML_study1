@@ -1,0 +1,40 @@
+.sk img {
+    position: absolute;
+    top: 30px;
+    left: 185px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 2px solid #c81623;
+}
+
+nav .write {
+    height: 46px;
+}
+.sk_list,
+.sk_com{
+    float: left;
+}
+#sk--nav li a{
+    padding: 0 20px;
+    line-height: 46px;
+}
+
+nav .sk_list li {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav .sk_list li a {
+    color: black;
+}
+
+nav .sk_com li {
+    float: left;
+}
+nav .sk_com li a{
+    font-size: 13px;
+}
+nav .sk_com li:nth-child(7) a{
+    color: red;
+}
