@@ -9,12 +9,15 @@
 
 nav .write {
     height: 46px;
+    overflow: hidden;
 }
+
 .sk_list,
-.sk_com{
+.sk_com {
     float: left;
 }
-#sk--nav li a{
+
+.sk--nav li a {
     padding: 0 20px;
     line-height: 46px;
 }
@@ -32,9 +35,40 @@ nav .sk_list li a {
 nav .sk_com li {
     float: left;
 }
-nav .sk_com li a{
+
+nav .sk_com ul li a {
     font-size: 13px;
+    line-height: 48px;
 }
-nav .sk_com li:nth-child(7) a{
+
+nav .sk_com li:nth-child(7) a {
     color: red;
 }
+
+nav .sk_com li:last-child a::after {
+    content: '\f107';
+    position: relative;
+    top: 2px;
+    right: -10px;
+    font-family: FontAwesome;
+}
+
+
+/* 中間商品欄位 */
+.sk--container .sk_bd li {
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin: 0 13px 10px 0;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.sk--container .sk_bd li:hover {
+    border: 1px solid #c81623;
+}
+
+.sk--container .sk_bd li:nth-child(4n) {
+    margin-right: 0;
+}
+
