@@ -1,0 +1,147 @@
+.sk img {
+    position: absolute;
+    top: 30px;
+    left: 185px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 2px solid #c81623;
+}
+
+nav .write {
+    height: 46px;
+    overflow: hidden;
+}
+
+.sk_list,
+.sk_com {
+    float: left;
+}
+
+.sk__nav li a {
+    padding: 0 20px;
+    line-height: 46px;
+}
+
+nav .sk_list li {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav .sk_list li a {
+    color: black;
+}
+
+nav .sk_com li {
+    float: left;
+}
+
+nav .sk_com ul li a {
+    font-size: 13px;
+    line-height: 48px;
+}
+
+nav .sk_com li:nth-child(7) a {
+    color: red;
+}
+
+nav .sk_com li:last-child a::after {
+    content: '\f107';
+    position: relative;
+    top: 2px;
+    right: -10px;
+    font-family: FontAwesome;
+}
+
+
+/* 中間商品欄位 */
+.sk__container .sk_bd li {
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin: 0 13px 10px 0;
+    overflow: hidden;
+}
+
+.sk__container .sk_bd li:hover {
+    box-shadow: 0 0 5px 5px rgba(118, 118, 118, 0.9),
+        5px 0 10px 10px rgba(164, 164, 164, 0.9) inset;
+    border:rgba(164, 164, 164, 0.9) 1px solid;
+
+}
+
+.sk__container .sk_bd li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk__commodity {
+    width: 290px;
+    height: 460px;
+    background-color: transparent;
+}
+
+.sk__commodity h6 {
+    font-size: 16px;
+    color: #000;
+}
+
+.sk_bd {
+    margin-top: 30px;
+}
+
+.sk_bd ul .sk__commodity img {
+    width: 290px;
+    height: 290px;
+}
+
+.sk_bd ul .sk__commodity .com_info {
+    padding: 10px 20px;
+    line-height: 30px;
+}
+
+.com_info span {
+    display: inline-block;
+}
+
+.com_info .price {
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.com_info .discount {
+    font-size: 20px;
+    color: red;
+    margin-right: 10px;
+
+}
+
+.com_info .progress i {
+    display: inline-block;
+    position: relative;
+    width: 135px;
+    height: 11px;
+    margin: 0 10px;
+    border: 1px solid #c81623;
+    border-radius: 10px;
+}
+
+.com_info .progress i:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 100px;
+    height: 7px;
+    background-color: rgb(203, 39, 10);
+    border-radius: 10px;
+}
+
+.sk__commodity .btn__buy {
+    position: relative;
+    bottom: 0;
+    width: 285px;
+    height: 50px;
+    background-color: rgb(137, 138, 75);
+    font: bold 15px arial;
+    border-radius: 20px;
+}

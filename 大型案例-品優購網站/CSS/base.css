@@ -14,6 +14,10 @@ dl {
 
 a {
     text-decoration: none;
+    color: #999999;
+}
+
+a:hover {
     color: red;
 }
 
@@ -67,5 +71,6 @@ body {
 }
 
 .clearfix {
+    /* 低版本瀏覽器兼容性 */
     *zoom: 1;
 }
