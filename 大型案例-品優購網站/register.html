@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員註冊</title>
+    <!-- ! 註冊頁面為隱私，不需進行 SEO 優化 -->
+
+    <!-- 網站圖標(縮圖) -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 字體圖標 fontawesome CSS -->
+    <link rel="stylesheet" href="assets/font/fontawesome/css/all.css" type="text/css">
+    <!-- 網站初始化清除CSS -->
+    <link rel="stylesheet" href="CSS/base.css">
+    <!-- 載入通用CSS格式 -->
+    <link rel="stylesheet" href="CSS/common.css">
+    <!-- 載入 register 依存 CSS 格式 -->
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+
+<body>
+    <!-- > 頭部 start  -->
+    <header id="header">
+        <div class="write">
+            <div class="logo">
+                <h1 title="返回品優購網站首頁"><a href="index.html">網站logo</a></h1>
+            </div>
+        </div>
+    </header>
+    <!--  頭部 end  -->
+
+    <!-- > 中間註冊區域  start-->
+    <div id="register" class="write">
+        <section class="register_hd">
+            <h3>註冊新帳號</h3>
+            <span>我有帳號，去<a href="index.html">登入</a></span>
+        </section>
+        <div class="register_area">
+            <form action="register.com" method="post" class="reg__form">
+                <ul>
+                    <li><label for="phone-num">手機號碼&nbsp;:</label><input type="text" name="inp_phone-num" id="phone-num"
+                            placeholder="國際請加 +852" autocomplete="off">
+                        <span class="success"><i class="success_icon"></i>簡訊認證碼已發送</span>
+                    </li>
+                    <li><label for="sms-verifi">簡訊驗證碼&nbsp;:</label><input type="text" name="inp_sms" id="sms-verifi"
+                            autocomplete="off">
+                        <span class="error"><i class="error_icon"></i>請輸入正確的數字</span>
+                    </li>
+                    <li><label for="setpsw">設定密碼&nbsp;:</label><input type="password" name="inp_setpsw" id="setpsw">
+                        <span class="error"><i class="error_icon"></i>密碼不能少於6位數，請重新輸入</span>
+                    </li>
+                    <li class="safety">安全程度<em class="low">弱</em><em class="middle">中</em><em class="better">強</em></li>
+                    <li><label for="checkpsw">確認密碼&nbsp;:</label><input type="password" name="inp_check-psw"
+                            id="checkpsw">
+                        <span class="error"><i class="error_icon"></i>密碼不一致，請重新輸入</span>
+                    </li>
+                    <li class="allow"><input type="checkbox" name="" id="allow"><label for="allow">同意隱私權政策</label><a
+                            href="#">《隱私權政策》</a></li>
+                    <li><input type="submit" name="submit" id="submit" value="完成註冊"></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!-- 中間註冊區域  end-->
+
+    <!-- > 底部 footer start -->
+    <footer id="footer">
+        <div class="write">
+            <!-- 下方版權區 -->
+            <div class="mod_copyright">
+                <!-- 更多連結 -->
+                <div class="link">
+                    <ul>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">聯繫我們</a></li>
+                        <li><a href="#">聯繫客服</a></li>
+                        <li><a href="#">商家入住</a></li>
+                        <li><a href="#">營銷中心</a></li>
+                        <li><a href="#">手機版品優購</a></li>
+                        <li><a href="#">友情連接</a></li>
+                        <li><a href="#">銷售團隊</a></li>
+                        <li><a href="#">品優購社區</a></li>
+                        <li><a href="#">品優購公益</a></li>
+                        <li><a href="#">English&nbsp;site</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- 版權資訊 -->
+                <div class="copyright">
+                    <div class="address-info">
+                        <span class="address">公司地址: 北京市昌平區建材城西路金燕龍辦公大樓一樓</span>
+                        <span class="Postal_code">郵遞區號: 100096</span>
+                        <span class="tell">電話: 400-618-4000</span>
+                        <span class="fax">傳真: 010-82935100</span>
+                        <span class="email">電子信箱: zhanghj+itcast.cn</span>
+                    </div>
+                    <div class="number">京ICP備08001421號京公網安備110108007702</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部 footer end -->
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+#header .write {
+    height: 82px;
+    border-bottom: 2px solid #b1191a;
+}
+
+#register.write {
+    height: 525px;
+    margin-top: 20px;
+    border: 2px solid #e4e4e4;
+
+}
+
+.register_hd {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    background-color: #e4e4e4;
+    line-height: 30px;
+}
+
+.register_hd h3 {
+    display: inline-block;
+}
+
+.register_hd span {
+    float: right;
+}
+
+.register_area .reg__form {
+    width: 650px;
+    margin: 50px auto 0;
+}
+
+.register_area li {
+    margin-bottom: 15px;
+}
+
+.register_area li label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+.register_area input[name^="inp"] {
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #cecece;
+}
+
+.reg__form .error {
+    color: red;
+}
+
+.reg__form .success {
+    color: green;
+}
+
+.reg__form i.success_icon,
+.reg__form i.error_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(/assets/images/error.png) no-repeat center;
+}
+
+.reg__form i.success_icon {
+    background: url(/assets/images/success.png) no-repeat center;
+}
+
+.safety {
+    padding-left: 260px;
+}
+
+.safety em {
+    padding: 0 10px;
+    color: #fff;
+}
+
+.safety em:first-child {
+    margin-left: 5px;
+}
+
+.safety .low {
+    background-color: red;
+}
+
+.safety .middle {
+    background-color: orange;
+}
+
+.safety .better {
+    background: green;
+}
+
+.reg__form input[id="allow"] {
+    margin-left: 150px;
+}
+.reg__form li+.allow a{
+    color: skyblue;
+}
+
+
+
+.reg__form input[type="submit"] {
+    width: 250px;
+    height: 30px;
+    margin-left: 130px;
+    background-color: red;
+    font: bold 14px "Microsoft YaHei";
+    color: #fff;
+}
+
+#footer .write {
+    height: 100px;
+    background-color: #fff;
+}
