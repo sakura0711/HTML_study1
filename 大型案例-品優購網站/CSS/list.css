@@ -60,12 +60,14 @@ nav .sk_com li:last-child a::after {
     width: 290px;
     height: 460px;
     margin: 0 13px 10px 0;
-    border: 2px solid transparent;
     overflow: hidden;
 }
 
 .sk__container .sk_bd li:hover {
-    border: 2px solid #4e4e4e;
+    box-shadow: 0 0 5px 5px rgba(118, 118, 118, 0.9),
+        5px 0 10px 10px rgba(164, 164, 164, 0.9) inset;
+    border:rgba(164, 164, 164, 0.9) 1px solid;
+
 }
 
 .sk__container .sk_bd li:nth-child(4n) {
@@ -75,7 +77,7 @@ nav .sk_com li:last-child a::after {
 .sk__commodity {
     width: 290px;
     height: 460px;
-    background: #f6f6f6;
+    background-color: transparent;
 }
 
 .sk__commodity h6 {
@@ -83,9 +85,10 @@ nav .sk_com li:last-child a::after {
     color: #000;
 }
 
-.sk_bd{
+.sk_bd {
     margin-top: 30px;
 }
+
 .sk_bd ul .sk__commodity img {
     width: 290px;
     height: 290px;
