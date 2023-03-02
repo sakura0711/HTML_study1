@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        body {
+            background-color: #666;
+            font: 600 50px "Helvetica Neue";
+            letter-spacing: 2px;
+        }
+
+        #effect {
+            position: relative;
+            height: 100px;
+            width: 320px;
+            margin: 100px auto;
+            color: #fff;
+        }
+
+        #effect:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            height: 60px;
+            content: "Hello World";
+            border-right: 5px solid #fff;
+            color: greenyellow;
+
+            animation: effect 3s infinite ease-in-out forwards;
+        }
+
+        @keyframes effect {
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="effect">Hello World</div>
+</body>
+
+</html>
