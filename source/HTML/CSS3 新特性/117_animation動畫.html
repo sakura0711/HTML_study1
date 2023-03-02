@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一起動起來~</title>
+    <style>
+        h3 {
+            font-size: 24px;
+            color: green;
+        }
+
+        .normal--box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+
+            /* 一般動畫通常為 ease or linear  */
+            animation: show 2s linear infinite forwards;
+        }
+
+        .normal--box:hover {
+            /* 動畫狀態: 暫停 / 播放 */
+            animation-play-state: paused;
+        }
+
+        .step--box {
+            width: 200px;
+            height: 100px;
+            background-color: skyblue;
+
+            /* steps() 會將動畫切割成設定的步數 */
+            animation: show 2s steps(10) infinite forwards;
+        }
+
+        .demo--box {
+            width: 200px;
+            height: 100px;
+            font-size: 20px;
+            animation: demo 8s steps(10) infinite forwards;
+            /* 強制一行內顯示 */
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        @keyframes show {
+            0% {
+                width: 10px;
+            }
+
+            100% {
+                width: 500px;
+            }
+        }
+
+        @keyframes demo {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="normal">
+        <h3>一般動畫</h3>
+        <div class="normal--box"></div>
+    </div>
+    <div class="step">
+        <h3>使用 steps() 動畫</h3>
+        <div class="step--box"></div>
+    </div>
+
+    <div class="demo">
+        <h3>使用 steps() 製作打字機效果</h3>
+        <div class="demo--box">我是一段測試的文字喔</div>
+    </div>
+</body>
+
+</html>
