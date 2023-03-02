@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奔跑吧~!</title>
+    <style>
+        body {
+            background-color: #e4e4e4;
+        }
+
+        .box_bg {
+            position: relative;
+            height: 98vh;
+            overflow: hidden;
+        }
+
+        .bear {
+            position: absolute;
+            bottom: 10px;
+            z-index: 3;
+            width: 200px;
+            height: 100px;
+            background: url(../assets/images/118/bear.png) no-repeat;
+            transform: translateX(-50%);
+
+            /* 定義多個動畫時，可以使用 , 隔開 */
+            animation: bear 1s steps(8) infinite,
+                move 3s linear forwards;
+        }
+
+        .box_bg .bg1 {
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            width: 100vw;
+            height: 336px;
+            /* 為了能夠讓背景循環，必須使用 repeat-x 平舖 */
+            background: url(../assets/images/118/bg1.png) repeat-x;
+            animation: bg_move 10s linear infinite;
+        }
+
+        .box_bg .bg2 {
+            position: absolute;
+            bottom: -100px;
+            z-index: 1;
+            width: 100vw;
+            height: 569px;
+            background: url(../assets/images/118/bg2.png) repeat-x;
+            animation: bg_move 14s linear infinite;
+        }
+
+
+
+        @keyframes bg_move {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -3840px 0;
+            }
+        }
+
+        @keyframes bear {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_bg">
+        <div class="bear"></div>
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+    </div>
+</body>
+
+</html>
