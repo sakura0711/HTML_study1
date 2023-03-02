@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地圖熱點</title>
+    <style>
+        body {
+            background-color: #afdde9;
+        }
+
+        #map-box {
+            width: 600px;
+            height: 847px;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+
+        #map-box .map {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url(../assets/images/TW.png) no-repeat center;
+        }
+
+        .map div[class="city1"] {
+            position: absolute;
+            bottom: 325px;
+            left: 200px;
+        }
+
+        .map div[class="city2"] {
+            position: absolute;
+            top: 100px;
+            left: 400px;
+        }
+
+        .map div[class^="city"] .dotted {
+            width: 8px;
+            height: 8px;
+            background-color: rgb(170, 170, 233);
+            border-radius: 4px;
+        }
+
+
+        .dotted::before {
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 3px 1px turquoise,
+                inset 0 0 1px 1px turquoise;
+            border-radius: 50%;
+            animation: circle 2s ease-in-out infinite;
+        }
+
+        .dotted::after {
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 3px 1px turquoise,
+                inset 0 0 1px 1px turquoise;
+
+            border-radius: 50%;
+            animation: circle 2s 1s ease-in-out infinite;
+        }
+
+        @keyframes circle {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(10);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map-box">
+        <div class="map">
+            <div class="city1">
+                <div class="dotted"></div>
+            </div>
+            <div class="city2">
+                <div class="dotted"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
