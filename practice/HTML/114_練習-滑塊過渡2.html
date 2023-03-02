@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我進來了,我又出去了~</title>
+    <style>
+        .box {
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border: 1px solid pink;
+            overflow: hidden;
+        }
+
+        .box--child {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transform-origin: left bottom;
+            transform: rotate(90deg);
+            transition: transform .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .box:hover .box--child {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box--child"></div>
+    </div>
+    <div class="box">
+        <div class="box--child"></div>
+    </div>
+    <div class="box">
+        <div class="box--child"></div>
+    </div>
+</body>
+
+</html>
