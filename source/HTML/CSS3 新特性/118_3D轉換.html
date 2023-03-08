@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 練習</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 20px;
+        }
+
+        .content div[class^="box"] {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 400px;
+            background-color: #e4e4e4;
+            border-radius: 0px;
+
+            /* // 透視 距離(越大變化越不明顯)*/
+            perspective: 400px;
+        }
+
+        .content div[class="box3"],
+        .content div[class="box5"],
+        .content div[class="box6"] {
+
+            perspective: 200px;
+        }
+
+        .content div[class="box4"] {
+
+            perspective: 700px;
+        }
+
+        .content div[class^="box"] div[class$="child"] {
+            width: 150px;
+            height: 150px;
+            background: #e4e4;
+        }
+
+        .box1--child {
+            animation: box1-ani 4s ease infinite;
+        }
+
+        .box2--child {
+            animation: box2-ani 4s ease infinite;
+        }
+
+        .box3--child {
+            animation: box1-ani 4s ease infinite;
+        }
+
+        .box4--child {
+            animation: box1-ani 4s ease infinite;
+        }
+
+        .box5--child {
+            animation: box5-ani 4s ease infinite;
+
+        }
+
+        .box6--child {
+            animation: box6-ani 4s ease infinite;
+
+        }
+
+        @keyframes box1-ani {
+            0% {
+                transform: translateZ(0);
+            }
+
+            50% {
+                transform: translateZ(100px);
+            }
+
+            100% {
+                transform: translateZ(0);
+            }
+        }
+
+        @keyframes box2-ani {
+            0% {
+                transform: translateZ(0);
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: translateZ(200px);
+            }
+
+            100% {
+                transform: translateZ(0);
+                transform: rotate(65deg);
+            }
+        }
+
+        @keyframes box5-ani {
+            0% {
+                transform: translateZ(0);
+                transform: rotateX(0deg);
+            }
+
+            50% {
+                transform: translateZ(800px);
+                transform: rotateX(180deg);
+            }
+
+            100% {
+                transform: translateZ(0);
+            }
+        }
+
+        @keyframes box6-ani {
+            0% {
+                transform: translateZ(0);
+                transform: rotateY(0deg);
+            }
+
+            50% {
+                transform: translateZ(800px);
+                transform: rotateY(180deg);
+            }
+
+            100% {
+                transform: translateZ(0);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="box1">
+            <h4>一般 3D Z軸變化</h4>
+            <div class="box1--child"></div>
+        </div>
+        <div class="box2">
+            <h4>添加其他屬性</h4>
+            <div class="box2--child"></div>
+        </div>
+        <div class="box3">
+            <h4>父元素透視距離(近/變化大)</h4>
+            <div class="box3--child"></div>
+        </div>
+        <div class="box4">
+            <h4>父元素透視距離(遠/變化小)</h4>
+            <div class="box4--child"></div>
+        </div>
+        <div class="box5">
+            <h4>rotateX</h4>
+            <div class="box5--child"></div>
+        </div>
+        <div class="box6">
+            <h4>rotateX</h4>
+            <div class="box6--child"></div>
+        </div>
+    </div>
+</body>
+
+</html>
