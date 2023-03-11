@@ -12,7 +12,6 @@
   - ✔️輸入手段
   - ✔️HTML5 新特性
 <br>
-    this is testing vim
 
 * CSS
   - ✔️基礎樣式
