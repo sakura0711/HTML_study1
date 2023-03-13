@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習</title>
+    <style lang="scss">
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font: 600 20px/50px "Microsoft YaHei";
+            text-align: center;
+
+        }
+
+        #box {
+            width: 440px;
+            height: 50px;
+            display: flex;
+            margin: 100px auto;
+            justify-content: space-around;
+        }
+
+        #box li {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            transform-style: preserve-3d;
+            transition: all .4s;
+        }
+
+        #box li:hover {
+            transform: rotateX(90deg);
+        }
+
+        .force,
+        .back {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            color: #fff;
+        }
+
+        .force {
+            z-index: 1;
+            background-color: skyblue;
+        }
+
+        .back {
+
+            transform: translateY(50%) rotateX(-90deg);
+            background-color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <nav>
+            <li>
+                <div class="force">force</div>
+                <div class="back">back</div>
+            </li>
+            <li>
+                <div class="force">force</div>
+                <div class="back">back</div>
+            </li>
+            <li>
+                <div class="force">force</div>
+                <div class="back">back</div>
+            </li>
+            <li>
+                <div class="force">force</div>
+                <div class="back">back</div>
+            </li>
+
+        </nav>
+    </div>
+</body>
+
+</html>
