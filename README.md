@@ -24,11 +24,11 @@
 <br>
 
 * JavaScript
-  - view HTML_study2...
+  - view [HTML_study2...](https://github.com/sakura0711/HTML_study2)
 <br>
 
 ---
 
 * 完成案例 : 
   - [學成在線靜態網頁](https://github.com/sakura0711/HTML_study1/tree/main/%E5%A4%A7%E5%9E%8B%E6%A1%88%E4%BE%8B-%E5%AD%B8%E6%88%90%E5%9C%A8%E7%B7%9A)
-  - [品優購網頁](https://github.com/sakura0711/HTML_study1/tree/main/%E5%A4%A7%E5%9E%8B%E6%A1%88%E4%BE%8B-%E5%93%81%E5%84%AA%E8%B3%BC%E7%B6%B2%E7%AB%99)
+  - [品優購網頁](http://testuser.ddns.net/)
